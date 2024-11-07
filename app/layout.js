@@ -1,4 +1,7 @@
 import "./globals.css";
+import { Roboto_Flex } from "next/font/google";
+
+const robotoFlex = Roboto_Flex({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
   title: "Joeward Peralta",
@@ -8,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={``}>{children}</body>
+      <body className={`${robotoFlex.className}`}>{children}</body>
     </html>
   );
 }
