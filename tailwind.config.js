@@ -13,6 +13,9 @@ module.exports = {
         tertiary: "var(--tertiary-color)",
         quaternary: "var(--quaternary-color)",
       },
+      borderRadius: {
+        default: "1.25rem",
+      },
     },
   },
   plugins: [],
