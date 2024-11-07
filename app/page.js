@@ -1,3 +1,14 @@
+import Column from "@/components/Column";
+import Container from "@/components/Container";
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main></main>
+    </>
+  );
 }
