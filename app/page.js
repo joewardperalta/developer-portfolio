@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import SubTitle from "@/components/SubTitle";
 import Title from "@/components/Title";
 import Image from "next/image";
+import Section from "@/components/Section";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="py-20" id="hero">
+        {/* Hero */}
+        <Section id="hero">
           <Container>
             <Column className="mb-10">
               <Title>Full-Stack Web Developer</Title>
@@ -33,7 +35,7 @@ export default function Home() {
               />
             </Column>
           </Container>
-        </section>
+        </Section>
       </main>
     </>
   );
