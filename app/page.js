@@ -29,6 +29,7 @@ export default function Home() {
                 width={2000}
                 height={2000}
                 alt="Joeward peralta portrait wearing a formal beige turtle neck"
+                priority
               />
             </Column>
           </Container>
