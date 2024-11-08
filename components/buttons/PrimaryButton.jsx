@@ -1,5 +1,13 @@
 import Button from "./Button";
 
-export default function PrimaryButton({ children }) {
-  return <Button className="border-secondary border">{children}</Button>;
+export default function PrimaryButton({ children, onClick, className, ref }) {
+  return (
+    <Button
+      ref={ref}
+      className={`${className} border-secondary border`}
+      onClick={onClick}
+    >
+      {children}
+    </Button>
+  );
 }
