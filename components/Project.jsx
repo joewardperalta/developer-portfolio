@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Heading3 from "./Typography/Heading3";
 
 export default function Project({
   title,
@@ -12,7 +13,7 @@ export default function Project({
 }) {
   return (
     <Link className="inline-block" href={link} target="_blank">
-      <div className="rounded-default mb-4 overflow-hidden">
+      <div className="mb-4 overflow-hidden rounded-default">
         <Image
           className="h-full w-full object-cover"
           src={img.src}
@@ -23,10 +24,8 @@ export default function Project({
       </div>
 
       <div className="mb-4">
-        <h3 className="text-secondary text-lg font-semibold leading-normal">
-          {title}
-        </h3>
-        <p className="text-tertiary mb-2 font-semibold leading-normal">
+        <Heading3>{title}</Heading3>
+        <p className="mb-2 font-semibold leading-normal text-tertiary">
           {startDate.month} {startDate.year} - {endDate.month} {endDate.year}
         </p>
         <p className="text-quaternary">{description}</p>
@@ -35,7 +34,7 @@ export default function Project({
       <ul className="flex flex-wrap gap-2">
         {tags.map((tag, index) => (
           <li
-            className="bg-secondary text-primary rounded-lg px-4 py-1 text-xs"
+            className="rounded-lg bg-secondary px-4 py-1 text-xs text-primary"
             key={index}
           >
             {tag}

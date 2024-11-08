@@ -3,11 +3,11 @@ import PrimaryButton from "@/components/buttons/PrimaryButton";
 import Column from "@/components/Column";
 import Container from "@/components/Container";
 import Navbar from "@/components/Navbar";
-import SubTitle from "@/components/SubTitle";
-import Title from "@/components/Title";
+import SubTitle from "@/components/Typography/SubTitle";
+import Title from "@/components/Typography/Title";
 import Image from "next/image";
 import Section from "@/components/Section";
-import Heading from "@/components/Heading";
+import Heading from "@/components/Typography/Heading";
 import TechCard from "@/components/TechCard";
 import ToggleSwitch from "@/components/ToggleSwitch";
 import ExperienceCard from "@/components/ExperienceCard";
@@ -51,7 +51,7 @@ export default function Home() {
 
             <Column className="h-[380px]">
               <Image
-                className="rounded-default h-full w-full object-cover"
+                className="h-full w-full rounded-default object-cover"
                 src="/Joeward Peralta Portrait.jpeg"
                 width={2000}
                 height={2000}
@@ -153,7 +153,7 @@ export default function Home() {
 
           <Container>
             <Column>
-              <ul className="text-secondary flex w-full justify-between">
+              <ul className="flex w-full justify-between text-secondary">
                 {contacts.map((contact, index) => (
                   <li className="" key={index}>
                     <Link href={contact.link} target="_blank">
@@ -170,7 +170,7 @@ export default function Home() {
       <footer>
         <Container>
           <Column>
-            <p className="text-secondary text-center text-xs">
+            <p className="text-center text-xs text-secondary">
               © Joeward Peralta 2024. All rights reserved.
             </p>
           </Column>

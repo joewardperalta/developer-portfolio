@@ -1,3 +1,5 @@
+import Heading3 from "./Typography/Heading3";
+
 export default function ExperienceCard({
   title,
   startDate,
@@ -8,13 +10,11 @@ export default function ExperienceCard({
   return (
     <div>
       <div className="mb-2">
-        <h3 className="text-secondary text-lg font-semibold leading-normal">
-          {title}
-        </h3>
-        <p className="text-tertiary font-semibold leading-normal">
+        <Heading3>{title}</Heading3>
+        <p className="font-semibold leading-normal text-tertiary">
           {startDate.month} {startDate.year} - {endDate.month} {endDate.year}
         </p>
-        <p className="text-quaternary font-semibold leading-normal">{role}</p>
+        <p className="font-semibold leading-normal text-quaternary">{role}</p>
       </div>
       <ul className="list-disc px-5">
         {bullets.map((bullet, index) => (

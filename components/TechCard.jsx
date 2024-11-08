@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Heading4 from "./Typography/Heading4";
 
 export default function TechCard({ title, img }) {
   return (
@@ -10,9 +11,7 @@ export default function TechCard({ title, img }) {
         height={2000}
         alt={img.alt}
       />
-      <h4 className="text-quaternary text-center text-sm font-semibold leading-normal">
-        {title}
-      </h4>
+      <Heading4>{title}</Heading4>
     </div>
   );
 }
