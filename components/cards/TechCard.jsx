@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading4 from "./Typography/Heading4";
+import Heading4 from "../Typography/Heading4";
 
 export default function TechCard({ title, img }) {
   return (

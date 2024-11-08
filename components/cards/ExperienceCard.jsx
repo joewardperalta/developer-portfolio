@@ -1,4 +1,4 @@
-import Heading3 from "./Typography/Heading3";
+import Heading3 from "../Typography/Heading3";
 
 export default function ExperienceCard({
   title,
