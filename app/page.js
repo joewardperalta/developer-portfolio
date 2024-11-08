@@ -10,13 +10,15 @@ import Section from "@/components/Section";
 import Heading from "@/components/Heading";
 import TechCard from "@/components/TechCard";
 import ToggleSwitch from "@/components/ToggleSwitch";
+import ExperienceCard from "@/components/ExperienceCard";
+import Project from "@/components/Project";
 import { useEffect, useState } from "react";
 
 // Data
 import technologies from "@/data/technologies.json";
 import experiences from "@/data/experiences.json";
 import education from "@/data/education.json";
-import ExperienceCard from "@/components/ExperienceCard";
+import projects from "@/data/projects.json";
 
 export default function Home() {
   const [experienceAndEducationContent, setExperienceAndEducationContent] =
@@ -110,6 +112,30 @@ export default function Home() {
                   role={content.role}
                   endDate={content.date.end}
                   bullets={content.bullets}
+                />
+              ))}
+            </Column>
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <Column>
+              <Heading>Personal Projects</Heading>
+            </Column>
+          </Container>
+          <Container>
+            <Column className="space-y-12">
+              {projects.map((project, index) => (
+                <Project
+                  key={index}
+                  title={project.title}
+                  description={project.description}
+                  img={project.img}
+                  startDate={project.startDate}
+                  endDate={project.endDate}
+                  tags={project.tags}
+                  link={project.link}
                 />
               ))}
             </Column>

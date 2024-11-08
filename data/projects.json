@@ -1,0 +1,77 @@
+[
+  {
+    "img": {
+      "src": "/project placeholder.jpg",
+      "alt": "project"
+    },
+    "title": "We Dev Agency",
+    "description": "Provides web services for business owners, specializing in E-commerce development.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "startDate": {
+      "month": "Jan",
+      "year": "2024"
+    },
+    "endDate": {
+      "month": "Jan",
+      "year": "2024"
+    },
+    "link": "https://www.apostolicsanctuarycanada.ca/"
+  },
+  {
+    "img": {
+      "src": "/project placeholder.jpg",
+      "alt": "project"
+    },
+    "title": "We Dev Agency",
+    "description": "Provides web services for business owners, specializing in E-commerce development.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "startDate": {
+      "month": "Jan",
+      "year": "2024"
+    },
+    "endDate": {
+      "month": "Jan",
+      "year": "2024"
+    },
+    "link": "https://www.apostolicsanctuarycanada.ca/"
+  },
+  {
+    "img": {
+      "src": "/project placeholder.jpg",
+      "alt": "project"
+    },
+    "title": "We Dev Agency",
+    "description": "Provides web services for business owners, specializing in E-commerce development.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    "startDate": {
+      "month": "Jan",
+      "year": "2024"
+    },
+    "endDate": {
+      "month": "Jan",
+      "year": "2024"
+    },
+    "link": "https://www.apostolicsanctuarycanada.ca/"
+  }
+]
