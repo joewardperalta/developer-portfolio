@@ -43,13 +43,13 @@ export default function Home() {
         {/* Hero */}
         <Section id="hero">
           <Container>
-            <Column className="mb-10">
+            <Column className="tablet:mb-[-51px] mb-10">
               <Title>Full-Stack Web Developer</Title>
               <SubTitle>— Based in Toronto, Canada</SubTitle>
               <PrimaryButton>Get my resume</PrimaryButton>
             </Column>
 
-            <Column className="h-[380px]">
+            <Column className="tablet:max-w-[26.625rem] tablet:max-h-[31.5625rem] tablet:my-0 tablet:ml-auto max-h-[380px]">
               <Image
                 className="h-full w-full rounded-default object-cover"
                 src="/Joeward Peralta Portrait.jpeg"
