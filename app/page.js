@@ -1,3 +1,4 @@
+"use client";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import Column from "@/components/Column";
 import Container from "@/components/Container";
@@ -8,11 +9,26 @@ import Image from "next/image";
 import Section from "@/components/Section";
 import Heading from "@/components/Heading";
 import TechCard from "@/components/TechCard";
+import ToggleSwitch from "@/components/ToggleSwitch";
+import { useEffect, useState } from "react";
 
 // Data
 import technologies from "@/data/technologies.json";
+import experiences from "@/data/experiences.json";
+import education from "@/data/education.json";
+import ExperienceCard from "@/components/ExperienceCard";
 
 export default function Home() {
+  const [experienceAndEducationContent, setExperienceAndEducationContent] =
+    useState([]);
+
+  useEffect(() => {
+    // set the default content for the experience section
+    if (experiences) {
+      setExperienceAndEducationContent(experiences);
+    }
+  }, []);
+
   return (
     <>
       <header>
@@ -49,6 +65,7 @@ export default function Home() {
               <Heading>Technologies</Heading>
             </Column>
           </Container>
+
           <Container>
             <Column>
               <ul className="grid grid-cols-3 justify-center gap-6">
@@ -58,6 +75,43 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+            </Column>
+          </Container>
+        </Section>
+
+        {/* Experience */}
+        <Section id="experience">
+          <Container>
+            <Column>
+              <Heading>Experience</Heading>
+            </Column>
+
+            <Column>
+              <ToggleSwitch
+                firstButtonTitle="Experience"
+                secondButtonTitle="Education"
+                firstButtonOnClick={() =>
+                  setExperienceAndEducationContent(experiences)
+                }
+                secondButtonOnClick={() =>
+                  setExperienceAndEducationContent(education)
+                }
+              ></ToggleSwitch>
+            </Column>
+          </Container>
+
+          <Container>
+            <Column className="space-y-6">
+              {experienceAndEducationContent.map((content, index) => (
+                <ExperienceCard
+                  key={index}
+                  title={content.title}
+                  startDate={content.date.start}
+                  role={content.role}
+                  endDate={content.date.end}
+                  bullets={content.bullets}
+                />
+              ))}
             </Column>
           </Container>
         </Section>
