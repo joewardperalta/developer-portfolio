@@ -1,0 +1,65 @@
+[
+  {
+    "title": "HTML",
+    "img": {
+      "src": "/html dark.png",
+      "alt": "html"
+    }
+  },
+  {
+    "title": "CSS",
+    "img": {
+      "src": "/css dark.png",
+      "alt": "css"
+    }
+  },
+  {
+    "title": "JavaScript",
+    "img": {
+      "src": "/javascript dark.png",
+      "alt": "javascript"
+    }
+  },
+  {
+    "title": "React.js",
+    "img": {
+      "src": "/react dark.png",
+      "alt": "react.js"
+    }
+  },
+  {
+    "title": "Next.js",
+    "img": {
+      "src": "/nextjs dark.png",
+      "alt": "next.js"
+    }
+  },
+  {
+    "title": "Node.js",
+    "img": {
+      "src": "/nodejs dark.png",
+      "alt": "node.js"
+    }
+  },
+  {
+    "title": "Tailwind CSS",
+    "img": {
+      "src": "/tailwind dark.png",
+      "alt": "tailwind css"
+    }
+  },
+  {
+    "title": "MongoDB",
+    "img": {
+      "src": "/mongodb dark.png",
+      "alt": "mongodb"
+    }
+  },
+  {
+    "title": "Figma",
+    "img": {
+      "src": "/figma dark.png",
+      "alt": "figma"
+    }
+  }
+]
