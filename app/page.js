@@ -13,12 +13,14 @@ import ToggleSwitch from "@/components/ToggleSwitch";
 import ExperienceCard from "@/components/ExperienceCard";
 import Project from "@/components/Project";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 // Data
 import technologies from "@/data/technologies.json";
 import experiences from "@/data/experiences.json";
 import education from "@/data/education.json";
 import projects from "@/data/projects.json";
+import contacts from "@/data/contacts.json";
 
 export default function Home() {
   const [experienceAndEducationContent, setExperienceAndEducationContent] =
@@ -138,6 +140,28 @@ export default function Home() {
                   link={project.link}
                 />
               ))}
+            </Column>
+          </Container>
+        </Section>
+
+        <Section id="contacts">
+          <Container>
+            <Column>
+              <Heading>Contacts</Heading>
+            </Column>
+          </Container>
+
+          <Container>
+            <Column>
+              <ul className="flex w-full justify-between">
+                {contacts.map((contact, index) => (
+                  <li className="" key={index}>
+                    <Link href={contact.link} target="_blank">
+                      {contact.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </Column>
           </Container>
         </Section>
