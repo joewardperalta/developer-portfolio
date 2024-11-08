@@ -16,6 +16,10 @@ module.exports = {
       borderRadius: {
         default: "1.25rem",
       },
+      screens: {
+        tablet: "744px",
+        desktop: "1440px",
+      },
     },
   },
   plugins: [],
