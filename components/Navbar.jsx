@@ -21,8 +21,8 @@ export default function Navbar() {
   }
 
   return (
-    <div>
-      <div className="relative z-50 flex w-full justify-between px-5 py-6">
+    <div className="tablet:px-8 tablet:py-10 px-5 py-6">
+      <div className="relative z-50 flex w-full justify-between">
         <Logo />
         <HamburgerButton onClick={showNav} />
       </div>
@@ -34,7 +34,7 @@ export default function Navbar() {
 function Logo() {
   return (
     <div>
-      <a className="text-secondary font-bold uppercase" href="#">
+      <a className="tablet:text-lg font-bold uppercase text-secondary" href="#">
         Joeward Peralta
       </a>
     </div>
@@ -44,8 +44,8 @@ function Logo() {
 function HamburgerButton({ onClick }) {
   return (
     <button className="space-y-1" onClick={onClick}>
-      <div className="bg-secondary h-1 w-8 rounded-full"></div>
-      <div className="bg-secondary h-1 w-8 rounded-full"></div>
+      <div className="h-1 w-8 rounded-full bg-secondary"></div>
+      <div className="h-1 w-8 rounded-full bg-secondary"></div>
     </button>
   );
 }
@@ -53,11 +53,11 @@ function HamburgerButton({ onClick }) {
 function Nav({ ref }) {
   return (
     <div
-      className="bg-primary absolute left-0 top-0 z-10 hidden h-screen w-full px-5 pb-6 pt-32"
+      className="absolute left-0 top-0 z-10 hidden h-screen w-full bg-primary px-5 pb-6 pt-32"
       ref={ref}
     >
-      <nav className="border-secondary border-b pb-14">
-        <ul className="text-secondary space-y-7 font-bold uppercase">
+      <nav className="border-b border-secondary pb-14">
+        <ul className="space-y-7 font-bold uppercase text-secondary">
           <li>
             <Link href="#technologies">Technologies</Link>
           </li>
@@ -73,7 +73,7 @@ function Nav({ ref }) {
         </ul>
       </nav>
 
-      <ul className="text-secondary space-y-7 pt-14 font-bold uppercase">
+      <ul className="space-y-7 pt-14 font-bold uppercase text-secondary">
         <li>
           <Link href="mailto:joeward_peralta@outlook.com">E-mail</Link>
         </li>
