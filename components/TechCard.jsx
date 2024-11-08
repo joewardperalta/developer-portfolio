@@ -10,9 +10,9 @@ export default function TechCard({ title, img }) {
         height={2000}
         alt={img.alt}
       />
-      <h3 className="text-quaternary text-center text-sm font-semibold leading-normal">
+      <h4 className="text-quaternary text-center text-sm font-semibold leading-normal">
         {title}
-      </h3>
+      </h4>
     </div>
   );
 }
