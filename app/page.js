@@ -153,7 +153,7 @@ export default function Home() {
 
           <Container>
             <Column>
-              <ul className="flex w-full justify-between">
+              <ul className="text-secondary flex w-full justify-between">
                 {contacts.map((contact, index) => (
                   <li className="" key={index}>
                     <Link href={contact.link} target="_blank">
@@ -166,6 +166,16 @@ export default function Home() {
           </Container>
         </Section>
       </main>
+
+      <footer>
+        <Container>
+          <Column>
+            <p className="text-secondary text-center text-xs">
+              © Joeward Peralta 2024. All rights reserved.
+            </p>
+          </Column>
+        </Container>
+      </footer>
     </>
   );
 }
