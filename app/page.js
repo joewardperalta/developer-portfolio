@@ -118,7 +118,7 @@ export default function Home() {
           </Container>
         </Section>
 
-        <Section>
+        <Section id="projects">
           <Container>
             <Column>
               <Heading>Personal Projects</Heading>
