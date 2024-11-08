@@ -72,7 +72,7 @@ export default function Home() {
 
           <Container>
             <Column>
-              <ul className="grid grid-cols-3 justify-center gap-6">
+              <ul className="tablet:flex tablet:gap-x-12 tablet:flex-wrap tablet:gap-y-8 grid grid-cols-3 justify-center gap-6">
                 {technologies.map((tech, index) => (
                   <li key={index}>
                     <TechCard title={tech.title} img={tech.img} />
