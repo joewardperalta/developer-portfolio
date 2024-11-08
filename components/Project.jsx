@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Heading3 from "./Typography/Heading3";
+import Heading4 from "./Typography/Heading4";
 
 export default function Project({
   title,
@@ -25,9 +26,9 @@ export default function Project({
 
       <div className="mb-4">
         <Heading3>{title}</Heading3>
-        <p className="mb-2 font-semibold leading-normal text-tertiary">
+        <Heading4 className="mb-2 text-start">
           {startDate.month} {startDate.year} - {endDate.month} {endDate.year}
-        </p>
+        </Heading4>
         <p className="text-quaternary">{description}</p>
       </div>
 
