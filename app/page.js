@@ -153,7 +153,7 @@ export default function Home() {
           </Container>
           <Container>
             <Column>
-              <ul className="flex w-full justify-between text-secondary">
+              <ul className="flex w-full justify-between text-secondary tablet:text-[2rem] tablet:leading-normal">
                 {contacts.map((contact, index) => (
                   <li className="" key={index}>
                     <Link href={contact.link} target="_blank">
