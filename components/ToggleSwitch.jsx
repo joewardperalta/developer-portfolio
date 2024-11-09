@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import PrimaryButton from "./buttons/PrimaryButton";
 
 export default function ToggleSwitch({
+  className,
   firstButtonTitle,
   secondButtonTitle,
   firstButtonOnClick,
@@ -61,7 +62,9 @@ export default function ToggleSwitch({
   }, []);
 
   return (
-    <div className="flex justify-center gap-2 tablet:justify-end">
+    <div
+      className={`${className} flex justify-center gap-2 tablet:justify-end`}
+    >
       <PrimaryButton
         ref={firstButtonRef}
         className="bg-secondary text-primary"

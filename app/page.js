@@ -95,6 +95,7 @@ export default function Home() {
             </Column>
             <Column>
               <ToggleSwitch
+                className="mb-8"
                 firstButtonTitle="Experience"
                 secondButtonTitle="Education"
                 firstButtonOnClick={() =>
