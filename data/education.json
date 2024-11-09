@@ -1,5 +1,9 @@
 [
   {
+    "img": {
+      "src": "/tasc.jpg",
+      "alt": "The Apostolic Sanctuary of Canada logo"
+    },
     "title": "Seneca Polytechnic College",
     "date": {
       "start": {
