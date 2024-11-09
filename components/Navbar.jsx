@@ -48,7 +48,7 @@ export default function Navbar() {
           <HamburgerButton onClick={showNav} />
         </div>
       </div>
-      <Nav ref={navRef} />
+      <Nav ref={navRef} handleNav={showNav} />
     </div>
   );
 }
@@ -75,7 +75,7 @@ function HamburgerButton({ onClick }) {
   );
 }
 
-function Nav({ ref }) {
+function Nav({ ref, handleNav }) {
   return (
     <div
       className="absolute left-0 top-0 z-10 hidden h-screen w-full bg-primary px-5 pb-6 pt-32 tablet:px-8"
@@ -85,16 +85,24 @@ function Nav({ ref }) {
         <nav>
           <ul className="space-y-7 font-bold uppercase text-secondary">
             <li>
-              <Link href="#technologies">Technologies</Link>
+              <Link href="#technologies" onClick={handleNav}>
+                Technologies
+              </Link>
             </li>
             <li>
-              <Link href="#experience">Experience</Link>
+              <Link href="#experience" onClick={handleNav}>
+                Experience
+              </Link>
             </li>
             <li>
-              <Link href="#projects">Projects</Link>
+              <Link href="#projects" onClick={handleNav}>
+                Projects
+              </Link>
             </li>
             <li>
-              <Link href="#contacts">Contacts</Link>
+              <Link href="#contacts" onClick={handleNav}>
+                Contacts
+              </Link>
             </li>
           </ul>
         </nav>
