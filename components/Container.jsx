@@ -1,5 +1,7 @@
-export default function Container({ children }) {
+export default function Container({ children, className }) {
   return (
-    <div className="flex flex-wrap px-5 tablet:px-8">{children}</div>
+    <div className={`${className} flex flex-wrap px-5 tablet:px-8`}>
+      {children}
+    </div>
   );
 }

@@ -44,15 +44,17 @@ export default function Home() {
       <main>
         {/* Hero */}
         <Section id="hero">
-          <Container>
-            <Column className="mb-10 tablet:mb-[-51px]">
-              <Title>Full-Stack Web Developer</Title>
-              <SubTitle>— Based in Toronto, Canada</SubTitle>
-              <PrimaryButton>Get my resume</PrimaryButton>
+          <Container className="desktop:items-center desktop:gap-36">
+            <Column>
+              <div className="mb-10 tablet:mb-[-51px] desktop:mb-0">
+                <Title>Full-Stack Web Developer</Title>
+                <SubTitle>— Based in Toronto, Canada</SubTitle>
+                <PrimaryButton>Get my resume</PrimaryButton>
+              </div>
             </Column>
-            <Column className="max-h-[380px] tablet:my-0 tablet:ml-auto tablet:max-h-[31.5625rem] tablet:max-w-[26.625rem]">
+            <Column>
               <Image
-                className="h-full w-full rounded-default object-cover"
+                className="h-[23.75rem] w-full rounded-default object-cover tablet:ml-auto tablet:h-[31.5625rem] tablet:w-[26.625rem] desktop:h-[40.75rem] desktop:w-full"
                 src="/Joeward Peralta Portrait.jpeg"
                 width={2000}
                 height={2000}
