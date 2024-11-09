@@ -87,7 +87,9 @@ export default function Home() {
         <Section id="experience">
           <Container>
             <Column>
-              <Heading>Experience</Heading>
+              <Heading className="tablet:text-left">
+                Experience
+              </Heading>
             </Column>
             <Column>
               <ToggleSwitch
@@ -103,10 +105,11 @@ export default function Home() {
             </Column>
           </Container>
           <Container>
-            <Column className="space-y-6">
+            <Column className="space-y-6 tablet:space-y-8">
               {experienceAndEducationContent.map((content, index) => (
                 <ExperienceCard
                   key={index}
+                  img={content.img}
                   title={content.title}
                   startDate={content.date.start}
                   role={content.role}

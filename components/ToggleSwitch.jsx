@@ -61,7 +61,7 @@ export default function ToggleSwitch({
   }, []);
 
   return (
-    <div className="flex justify-center gap-2">
+    <div className="flex justify-center gap-2 tablet:justify-end">
       <PrimaryButton
         ref={firstButtonRef}
         className="bg-secondary text-primary"
