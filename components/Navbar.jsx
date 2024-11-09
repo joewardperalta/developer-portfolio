@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="tablet:px-8 tablet:py-10 px-5 py-6">
+    <div className="px-5 py-6 tablet:px-8 tablet:py-10">
       <div className="relative z-50 flex w-full justify-between">
         <Logo />
         <HamburgerButton onClick={showNav} />
@@ -34,7 +34,10 @@ export default function Navbar() {
 function Logo() {
   return (
     <div>
-      <a className="tablet:text-lg font-bold uppercase text-secondary" href="#">
+      <a
+        className="font-bold uppercase text-secondary tablet:text-lg"
+        href="#"
+      >
         Joeward Peralta
       </a>
     </div>
@@ -53,7 +56,7 @@ function HamburgerButton({ onClick }) {
 function Nav({ ref }) {
   return (
     <div
-      className="absolute left-0 top-0 z-10 hidden h-screen w-full bg-primary px-5 pb-6 pt-32"
+      className="absolute left-0 top-0 z-10 hidden h-screen w-full bg-primary px-5 pb-6 pt-32 tablet:px-8"
       ref={ref}
     >
       <nav className="border-b border-secondary pb-14">
@@ -75,7 +78,9 @@ function Nav({ ref }) {
 
       <ul className="space-y-7 pt-14 font-bold uppercase text-secondary">
         <li>
-          <Link href="mailto:joeward_peralta@outlook.com">E-mail</Link>
+          <Link href="mailto:joeward_peralta@outlook.com">
+            E-mail
+          </Link>
         </li>
         <li>
           <Link
