@@ -12,7 +12,7 @@ export default function ExperienceCard({
 }) {
   return (
     <div className="flex gap-5">
-      <div className="max-h-14 max-w-14 overflow-hidden rounded-full bg-white">
+      <div className="max-h-14 min-h-14 min-w-14 max-w-14 overflow-hidden rounded-full bg-white">
         <Image
           className="h-full w-full object-contain"
           src={img.src}
