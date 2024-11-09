@@ -23,8 +23,10 @@ import projects from "@/data/projects.json";
 import contacts from "@/data/contacts.json";
 
 export default function Home() {
-  const [experienceAndEducationContent, setExperienceAndEducationContent] =
-    useState([]);
+  const [
+    experienceAndEducationContent,
+    setExperienceAndEducationContent,
+  ] = useState([]);
 
   useEffect(() => {
     // set the default content for the experience section
@@ -43,13 +45,12 @@ export default function Home() {
         {/* Hero */}
         <Section id="hero">
           <Container>
-            <Column className="tablet:mb-[-51px] mb-10">
+            <Column className="mb-10 tablet:mb-[-51px]">
               <Title>Full-Stack Web Developer</Title>
               <SubTitle>— Based in Toronto, Canada</SubTitle>
               <PrimaryButton>Get my resume</PrimaryButton>
             </Column>
-
-            <Column className="tablet:max-w-[26.625rem] tablet:max-h-[31.5625rem] tablet:my-0 tablet:ml-auto max-h-[380px]">
+            <Column className="max-h-[380px] tablet:my-0 tablet:ml-auto tablet:max-h-[31.5625rem] tablet:max-w-[26.625rem]">
               <Image
                 className="h-full w-full rounded-default object-cover"
                 src="/Joeward Peralta Portrait.jpeg"
@@ -72,7 +73,7 @@ export default function Home() {
 
           <Container>
             <Column>
-              <ul className="tablet:flex tablet:gap-x-12 tablet:flex-wrap tablet:gap-y-8 grid grid-cols-3 justify-center gap-6">
+              <ul className="grid grid-cols-3 justify-center gap-6 tablet:flex tablet:flex-wrap tablet:gap-x-12 tablet:gap-y-8">
                 {technologies.map((tech, index) => (
                   <li key={index}>
                     <TechCard title={tech.title} img={tech.img} />
