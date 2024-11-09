@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="px-5 py-6 tablet:px-8 tablet:py-10">
+    <div className="px-5 py-6 tablet:px-8 tablet:py-10 desktop:px-24">
       <div className="relative z-50 flex w-full justify-between">
         <Logo />
         <HamburgerButton onClick={showNav} />
