@@ -12,14 +12,24 @@ export default function ToggleSwitch({
   const secondButtonRef = useRef(null);
 
   useEffect(() => {
+    // change the active button text color to primary
+    firstButtonRef.current.classList.remove("text-secondary");
+    firstButtonRef.current.classList.add("text-primary");
+
     // check first if the ref variables have elements in them
     if (firstButtonRef.current && secondButtonRef.current) {
       // activate the first button
       firstButtonRef.current.addEventListener("click", () => {
         // check if the button is not active
-        if (!firstButtonRef.current.classList.contains("bg-secondary")) {
+        if (
+          !firstButtonRef.current.classList.contains("bg-secondary")
+        ) {
           // activate the button
-          firstButtonRef.current.classList.add("bg-secondary", "text-primary");
+          firstButtonRef.current.classList.remove("text-secondary");
+          firstButtonRef.current.classList.add(
+            "bg-secondary",
+            "text-primary",
+          );
 
           // disable the current active button
           secondButtonRef.current.classList.remove(
@@ -32,8 +42,14 @@ export default function ToggleSwitch({
 
       // activate the second button
       secondButtonRef.current.addEventListener("click", () => {
-        if (!secondButtonRef.current.classList.contains("bg-secondary")) {
-          secondButtonRef.current.classList.add("bg-secondary", "text-primary");
+        if (
+          !secondButtonRef.current.classList.contains("bg-secondary")
+        ) {
+          secondButtonRef.current.classList.remove("text-secondary");
+          secondButtonRef.current.classList.add(
+            "bg-secondary",
+            "text-primary",
+          );
           firstButtonRef.current.classList.remove(
             "bg-secondary",
             "text-primary",
@@ -53,7 +69,10 @@ export default function ToggleSwitch({
       >
         {firstButtonTitle}
       </PrimaryButton>
-      <PrimaryButton ref={secondButtonRef} onClick={secondButtonOnClick}>
+      <PrimaryButton
+        ref={secondButtonRef}
+        onClick={secondButtonOnClick}
+      >
         {secondButtonTitle}
       </PrimaryButton>
     </div>
