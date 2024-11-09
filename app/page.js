@@ -167,7 +167,7 @@ export default function Home() {
         </Section>
       </main>
 
-      <footer>
+      <footer className="px-24 py-4">
         <Container>
           <Column>
             <p className="text-center text-xs text-secondary">
