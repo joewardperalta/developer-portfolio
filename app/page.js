@@ -70,7 +70,6 @@ export default function Home() {
               <Heading>Technologies</Heading>
             </Column>
           </Container>
-
           <Container>
             <Column>
               <ul className="grid grid-cols-3 justify-center gap-6 tablet:flex tablet:flex-wrap tablet:gap-x-12 tablet:gap-y-8">
@@ -90,7 +89,6 @@ export default function Home() {
             <Column>
               <Heading>Experience</Heading>
             </Column>
-
             <Column>
               <ToggleSwitch
                 firstButtonTitle="Experience"
@@ -104,7 +102,6 @@ export default function Home() {
               ></ToggleSwitch>
             </Column>
           </Container>
-
           <Container>
             <Column className="space-y-6">
               {experienceAndEducationContent.map((content, index) => (
@@ -151,7 +148,6 @@ export default function Home() {
               <Heading>Contacts</Heading>
             </Column>
           </Container>
-
           <Container>
             <Column>
               <ul className="flex w-full justify-between text-secondary">
