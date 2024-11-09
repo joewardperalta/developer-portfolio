@@ -1,6 +1,10 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useRef } from "react";
+
+// Data
+import socials from "@/data/socials.json";
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -24,7 +28,25 @@ export default function Navbar() {
     <div className="px-5 py-6 tablet:px-8 tablet:py-10 desktop:mx-auto desktop:max-w-screen-desktop desktop:px-24">
       <div className="relative z-50 flex w-full justify-between">
         <Logo />
-        <HamburgerButton onClick={showNav} />
+        <div className="flex gap-6">
+          <ul className="flex items-center gap-3">
+            {socials.map((social, index) => (
+              <li key={index} className="h-[24px] w-[24px]">
+                <Link href={social.link} target="_blank">
+                  <Image
+                    className="h-full w-full"
+                    src={social.img.src}
+                    alt={social.img.alt}
+                    width={500}
+                    height={500}
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <HamburgerButton onClick={showNav} />
+        </div>
       </div>
       <Nav ref={navRef} />
     </div>
@@ -60,7 +82,7 @@ function Nav({ ref }) {
       ref={ref}
     >
       <div className="desktop:mx-auto desktop:max-w-screen-desktop desktop:px-24">
-        <nav className="border-b border-secondary pb-14">
+        <nav>
           <ul className="space-y-7 font-bold uppercase text-secondary">
             <li>
               <Link href="#technologies">Technologies</Link>
@@ -76,33 +98,6 @@ function Nav({ ref }) {
             </li>
           </ul>
         </nav>
-
-        <ul className="space-y-7 pt-14 font-bold uppercase text-secondary">
-          <li>
-            <Link href="mailto:joeward_peralta@outlook.com">
-              E-mail
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.linkedin.com/in/joewardperalta/"
-              target="_blank"
-            >
-              LinkedIn
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://github.com/joewardperalta?tab=repositories"
-              target="_blank"
-            >
-              GitHub
-            </Link>
-          </li>
-          <li>
-            <Link href="tel:6479013040">Phone</Link>
-          </li>
-        </ul>
       </div>
     </div>
   );

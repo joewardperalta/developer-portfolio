@@ -1,0 +1,23 @@
+[
+  {
+    "img": {
+      "src": "/github dark.png",
+      "alt": "GitHub icon"
+    },
+    "link": "https://github.com/joewardperalta"
+  },
+  {
+    "img": {
+      "src": "/linkedin dark.png",
+      "alt": "LinkedIn icon"
+    },
+    "link": "https://www.linkedin.com/in/joewardperalta/"
+  },
+  {
+    "img": {
+      "src": "/facebook dark.png",
+      "alt": "Facebook icon"
+    },
+    "link": "https://www.facebook.com/joewardperalta.joe/"
+  }
+]
