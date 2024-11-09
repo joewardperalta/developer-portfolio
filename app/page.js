@@ -105,7 +105,7 @@ export default function Home() {
             </Column>
           </Container>
           <Container>
-            <Column className="space-y-6 tablet:space-y-8">
+            <Column className="space-y-6 tablet:space-y-12">
               {experienceAndEducationContent.map((content, index) => (
                 <ExperienceCard
                   key={index}
