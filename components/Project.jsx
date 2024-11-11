@@ -13,7 +13,11 @@ export default function Project({
   link,
 }) {
   return (
-    <Link className="inline-block" href={link} target="_blank">
+    <Link
+      className="inline-block transition-all duration-300 ease-in-out hover:-translate-y-4"
+      href={link}
+      target="_blank"
+    >
       <div className="mb-4 overflow-hidden rounded-default">
         <Image
           className="h-full w-full object-cover"
@@ -27,7 +31,8 @@ export default function Project({
       <div className="mb-4">
         <Heading3>{title}</Heading3>
         <Heading4 className="mb-2 text-start">
-          {startDate.month} {startDate.year} - {endDate.month} {endDate.year}
+          {startDate.month} {startDate.year} - {endDate.month}{" "}
+          {endDate.year}
         </Heading4>
         <p className="text-quaternary">{description}</p>
       </div>
