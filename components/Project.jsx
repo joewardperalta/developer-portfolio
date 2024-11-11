@@ -22,8 +22,8 @@ export default function Project({
         <Image
           className="h-full w-full object-cover"
           src={img.src}
-          width={2000}
-          height={2000}
+          width={1440}
+          height={993}
           alt={img.alt}
         />
       </div>

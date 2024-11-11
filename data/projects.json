@@ -1,11 +1,11 @@
 [
   {
     "img": {
-      "src": "/images/project placeholder.png",
-      "alt": "project"
+      "src": "/images/jlance.jpg",
+      "alt": "website's homepage showcasing the hero section"
     },
-    "title": "Web Development Agency",
-    "description": "Provides web services for business owners, specializing in E-commerce development.",
+    "title": "JLANCE",
+    "description": "A web development agency that specializes in E-commerce, offering services for businesses and entreprises in a subscription based model.",
     "tags": [
       "HTML",
       "CSS",
@@ -22,6 +22,6 @@
       "month": "Jan",
       "year": "2024"
     },
-    "link": "https://www.apostolicsanctuarycanada.ca/"
+    "link": "https://portfolio-website-swart-eta-20.vercel.app/"
   }
 ]
