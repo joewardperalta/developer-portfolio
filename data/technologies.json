@@ -2,63 +2,63 @@
   {
     "title": "HTML",
     "img": {
-      "src": "/html dark.png",
+      "src": "/images/html dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "CSS",
     "img": {
-      "src": "/css dark.png",
+      "src": "/images/css dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "JavaScript",
     "img": {
-      "src": "/javascript dark.png",
+      "src": "/images/javascript dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "React.js",
     "img": {
-      "src": "/react dark.png",
+      "src": "/images/react dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Next.js",
     "img": {
-      "src": "/nextjs dark.png",
+      "src": "/images/nextjs dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Node.js",
     "img": {
-      "src": "/nodejs dark.png",
+      "src": "/images/nodejs dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Tailwind CSS",
     "img": {
-      "src": "/tailwind dark.png",
+      "src": "/images/tailwind dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "MongoDB",
     "img": {
-      "src": "/mongodb dark.png",
+      "src": "/images/mongodb dark.png",
       "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Figma",
     "img": {
-      "src": "/figma dark.png",
+      "src": "/images/figma dark.png",
       "alt": "is an icon colored in black"
     }
   }

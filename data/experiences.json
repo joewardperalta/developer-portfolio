@@ -1,7 +1,7 @@
 [
   {
     "img": {
-      "src": "/tasc.png",
+      "src": "/images/tasc.png",
       "alt": "The Apostolic Sanctuary of Canada logo"
     },
     "title": "Apostolic Sanctuary of Canada",
@@ -18,27 +18,6 @@
     "role": "Web Developer (Freelance)",
     "bullets": [
       "Developed and launched a fully responsive eCommerce website using React.js and Next.js, streamlining user experience and increasing engagement through intuitive UI and optimized performance.",
-      "Developed and launched a fully responsive eCommerce website using React.js and Next.js, streamlining user experience and increasing engagement through intuitive UI and optimized performance."
-    ]
-  },
-  {
-    "img": {
-      "src": "/tasc.png",
-      "alt": "The Apostolic Sanctuary of Canada logo"
-    },
-    "title": "Inside Out Window Coverings",
-    "date": {
-      "start": {
-        "month": "Mar",
-        "year": "2024"
-      },
-      "end": {
-        "month": "Apr",
-        "year": "2024"
-      }
-    },
-    "role": "Web Developer (Freelance)",
-    "bullets": [
       "Developed and launched a fully responsive eCommerce website using React.js and Next.js, streamlining user experience and increasing engagement through intuitive UI and optimized performance."
     ]
   }

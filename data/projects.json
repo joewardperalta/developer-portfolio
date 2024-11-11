@@ -1,60 +1,10 @@
 [
   {
     "img": {
-      "src": "/project placeholder.png",
+      "src": "/images/project placeholder.png",
       "alt": "project"
     },
     "title": "Web Development Agency",
-    "description": "Provides web services for business owners, specializing in E-commerce development.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS"
-    ],
-    "startDate": {
-      "month": "Jan",
-      "year": "2024"
-    },
-    "endDate": {
-      "month": "Jan",
-      "year": "2024"
-    },
-    "link": "https://www.apostolicsanctuarycanada.ca/"
-  },
-  {
-    "img": {
-      "src": "/project placeholder.png",
-      "alt": "project"
-    },
-    "title": "E-commerce Website",
-    "description": "Provides web services for business owners, specializing in E-commerce development.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS"
-    ],
-    "startDate": {
-      "month": "Jan",
-      "year": "2024"
-    },
-    "endDate": {
-      "month": "Jan",
-      "year": "2024"
-    },
-    "link": "https://www.apostolicsanctuarycanada.ca/"
-  },
-  {
-    "img": {
-      "src": "/project placeholder.png",
-      "alt": "project"
-    },
-    "title": "Food Delivery App",
     "description": "Provides web services for business owners, specializing in E-commerce development.",
     "tags": [
       "HTML",
