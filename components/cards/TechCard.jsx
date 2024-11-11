@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Heading4 from "../Typography/Heading4";
+import Heading3 from "../Typography/Heading3";
 
 export default function TechCard({ title, img }) {
   return (
@@ -11,7 +11,9 @@ export default function TechCard({ title, img }) {
         height={64}
         alt={img.alt}
       />
-      <Heading4>{title}</Heading4>
+      <Heading3 className="text-center text-sm text-tertiary tablet:text-[1rem] desktop:text-base">
+        {title}
+      </Heading3>
     </div>
   );
 }
