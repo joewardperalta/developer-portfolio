@@ -9,7 +9,7 @@ export default function PrimaryButton({
   return (
     <Button
       ref={ref}
-      className={`${className} border border-tertiary transition-all hover:bg-secondary hover:text-primary`}
+      className={`${className} border border-tertiary hover:bg-secondary hover:text-primary`}
       onClick={onClick}
     >
       {children}
