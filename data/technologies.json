@@ -3,63 +3,63 @@
     "title": "HTML",
     "img": {
       "src": "/html dark.png",
-      "alt": "html"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "CSS",
     "img": {
       "src": "/css dark.png",
-      "alt": "css"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "JavaScript",
     "img": {
       "src": "/javascript dark.png",
-      "alt": "javascript"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "React.js",
     "img": {
       "src": "/react dark.png",
-      "alt": "react.js"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Next.js",
     "img": {
       "src": "/nextjs dark.png",
-      "alt": "next.js"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Node.js",
     "img": {
       "src": "/nodejs dark.png",
-      "alt": "node.js"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Tailwind CSS",
     "img": {
       "src": "/tailwind dark.png",
-      "alt": "tailwind css"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "MongoDB",
     "img": {
       "src": "/mongodb dark.png",
-      "alt": "mongodb"
+      "alt": "is an icon colored in black"
     }
   },
   {
     "title": "Figma",
     "img": {
       "src": "/figma dark.png",
-      "alt": "figma"
+      "alt": "is an icon colored in black"
     }
   }
 ]
