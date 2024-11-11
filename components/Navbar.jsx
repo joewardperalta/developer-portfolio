@@ -68,7 +68,11 @@ function Logo() {
 
 function HamburgerButton({ onClick }) {
   return (
-    <button className="space-y-1" onClick={onClick}>
+    <button
+      className="space-y-1"
+      onClick={onClick}
+      aria-label="Hamburger button"
+    >
       <div className="h-1 w-8 rounded-full bg-secondary"></div>
       <div className="h-1 w-8 rounded-full bg-secondary"></div>
     </button>
