@@ -49,13 +49,15 @@ export default function Home() {
               <div className="mb-10 tablet:mb-[-51px] desktop:mb-0">
                 <Title>Full-Stack Web Developer</Title>
                 <SubTitle>— Based in Toronto, Canada</SubTitle>
-                <PrimaryButton>Get my resume</PrimaryButton>
+                <a href="/documents/Resume.pdf" download>
+                  <PrimaryButton>Get my resume</PrimaryButton>
+                </a>
               </div>
             </Column>
             <Column>
               <Image
                 className="h-[23.75rem] w-full rounded-default object-cover tablet:ml-auto tablet:h-[31.5625rem] tablet:w-[26.625rem] desktop:h-[40.75rem] desktop:w-full"
-                src="/Joeward Peralta Portrait.jpg"
+                src="/images/Joeward Peralta Portrait.jpg"
                 width={1000}
                 height={1333}
                 alt="Joeward peralta portrait wearing a formal beige turtle neck"
