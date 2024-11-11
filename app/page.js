@@ -158,7 +158,10 @@ export default function Home() {
             <Column>
               <ul className="flex w-full justify-between text-secondary tablet:text-[2rem] tablet:leading-normal">
                 {contacts.map((contact, index) => (
-                  <li className="" key={index}>
+                  <li
+                    className="border-b-[3px] border-b-primary transition duration-300 ease-in-out hover:border-b-[3px] hover:border-b-secondary hover:underline-offset-4"
+                    key={index}
+                  >
                     <Link href={contact.link} target="_blank">
                       {contact.title}
                     </Link>
