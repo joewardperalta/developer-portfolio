@@ -55,11 +55,10 @@ export default function Home() {
             <Column>
               <Image
                 className="h-[23.75rem] w-full rounded-default object-cover tablet:ml-auto tablet:h-[31.5625rem] tablet:w-[26.625rem] desktop:h-[40.75rem] desktop:w-full"
-                src="/Joeward Peralta Portrait.jpeg"
-                width={2000}
-                height={2000}
+                src="/Joeward Peralta Portrait.jpg"
+                width={1000}
+                height={1333}
                 alt="Joeward peralta portrait wearing a formal beige turtle neck"
-                priority
               />
             </Column>
           </Container>

@@ -1,7 +1,7 @@
 [
   {
     "img": {
-      "src": "/project placeholder.jpg",
+      "src": "/project placeholder.png",
       "alt": "project"
     },
     "title": "Web Development Agency",
@@ -26,7 +26,7 @@
   },
   {
     "img": {
-      "src": "/project placeholder.jpg",
+      "src": "/project placeholder.png",
       "alt": "project"
     },
     "title": "E-commerce Website",
@@ -51,7 +51,7 @@
   },
   {
     "img": {
-      "src": "/project placeholder.jpg",
+      "src": "/project placeholder.png",
       "alt": "project"
     },
     "title": "Food Delivery App",
