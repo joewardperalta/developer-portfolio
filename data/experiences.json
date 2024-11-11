@@ -1,24 +1,30 @@
 [
   {
     "img": {
-      "src": "/images/tasc.png",
+      "src": "/images/upwork icon.png",
       "alt": "The Apostolic Sanctuary of Canada logo"
     },
-    "title": "Apostolic Sanctuary of Canada",
+    "title": "Freelance Full-Stack Developer",
     "date": {
       "start": {
-        "month": "Mar",
+        "month": "February",
         "year": "2024"
       },
       "end": {
-        "month": "Apr",
-        "year": "2024"
+        "month": "Present",
+        "year": ""
       }
     },
     "role": "Web Developer (Freelance)",
     "bullets": [
-      "Developed and launched a fully responsive eCommerce website using React.js and Next.js, streamlining user experience and increasing engagement through intuitive UI and optimized performance.",
-      "Developed and launched a fully responsive eCommerce website using React.js and Next.js, streamlining user experience and increasing engagement through intuitive UI and optimized performance."
+      "Designed and developed a mobile-responsive user-friendly, and accessible website using Figma, HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS",
+      "Developed server-side applications and RESTful APIs using Node.js and Express; integrated third-party APIs and maintained secure data handling",
+      "Enhanced web application speed and efficiency by optimizing assets, implementing caching strategies, and using performance monitoring tools",
+      "Performed unit testing, integration testing, and debugging to ensure functionality and quality; utilized tools like Jest, Cypress, and Postman",
+      "Used Git for version control and collaborated on code management through GitHub",
+      "Deployed and maintained applications on Vercel",
+      "Collaborated with clients to define project goals, requirements, and timelines",
+      "Managed project timelines and deliverables, communicated progress, and ensured client satisfaction through regular updates and feedback sessions"
     ]
   }
 ]
