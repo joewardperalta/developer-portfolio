@@ -131,7 +131,7 @@ export default function Home() {
             </Column>
           </Container>
           <Container>
-            <Column className="space-y-12 desktop:flex desktop:gap-12 desktop:space-y-0">
+            <Column className="laptop:flex laptop:gap-12 laptop:space-y-0 space-y-12">
               {projects.map((project, index) => (
                 <Project
                   key={index}
