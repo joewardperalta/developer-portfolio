@@ -49,7 +49,7 @@ export default function Home() {
             <Column className="text-center">
               <Title>Full Stack Web Developer</Title>
               <SubTitle>Based in Toronto, Canada</SubTitle>
-              <SocialList className="mx-auto" light={false} />
+              <SocialList className="mx-auto mb-12" light={false} />
               <PrimaryButton>View My Projects</PrimaryButton>
             </Column>
           </Container>
