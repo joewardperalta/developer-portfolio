@@ -1,14 +1,36 @@
 [
   {
     "img": {
-      "src": "/images/github dark.png",
+      "dark": {
+        "src": "/vectors/instagram dark.svg"
+      },
+      "light": {
+        "src": "/vectors/instagram light.svg"
+      },
+      "alt": "Instagram icon"
+    },
+    "link": "https://github.com/joewardperalta"
+  },
+  {
+    "img": {
+      "dark": {
+        "src": "/vectors/github dark.svg"
+      },
+      "light": {
+        "src": "/vectors/github light.svg"
+      },
       "alt": "GitHub icon"
     },
     "link": "https://github.com/joewardperalta"
   },
   {
     "img": {
-      "src": "/images/linkedin dark.png",
+      "dark": {
+        "src": "/vectors/linkedin dark.svg"
+      },
+      "light": {
+        "src": "/vectors/linkedin light.svg"
+      },
       "alt": "LinkedIn icon"
     },
     "link": "https://www.linkedin.com/in/joewardperalta/"
