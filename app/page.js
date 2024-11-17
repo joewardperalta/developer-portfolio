@@ -21,6 +21,7 @@ import experiences from "@/data/experiences.json";
 import education from "@/data/education.json";
 import projects from "@/data/projects.json";
 import contacts from "@/data/contacts.json";
+import SocialList from "@/components/SocialList";
 
 export default function Home() {
   const [
@@ -44,25 +45,12 @@ export default function Home() {
       <main>
         {/* Hero */}
         <Section id="hero">
-          <Container className="desktop:items-center desktop:gap-36">
-            <Column>
-              <div className="mb-10 tablet:mb-[-51px] desktop:mb-0">
-                <Title>Full-Stack Web Developer</Title>
-                <SubTitle>— Based in Toronto, Canada</SubTitle>
-                <a href="/documents/Resume.pdf" download>
-                  <PrimaryButton>Get my resume</PrimaryButton>
-                </a>
-              </div>
-            </Column>
-            <Column>
-              <Image
-                className="h-[23.75rem] w-full rounded-default object-cover tablet:ml-auto tablet:h-[31.5625rem] tablet:w-[26.625rem] desktop:h-[40.75rem] desktop:w-full"
-                src="/images/Joeward Peralta Portrait.jpg"
-                width={1000}
-                height={1333}
-                alt="Joeward peralta portrait wearing a formal beige turtle neck"
-                priority
-              />
+          <Container>
+            <Column className="text-center">
+              <Title>Full Stack Web Developer</Title>
+              <SubTitle>Based in Toronto, Canada</SubTitle>
+              <SocialList className="mx-auto" light={false} />
+              <PrimaryButton>View My Projects</PrimaryButton>
             </Column>
           </Container>
         </Section>
@@ -133,7 +121,7 @@ export default function Home() {
             </Column>
           </Container>
           <Container>
-            <Column className="laptop:flex laptop:gap-12 laptop:space-y-0 space-y-12">
+            <Column className="space-y-12 laptop:flex laptop:gap-12 laptop:space-y-0">
               {projects.map((project, index) => (
                 <Project
                   key={index}
