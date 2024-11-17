@@ -1,7 +1,7 @@
 export default function Heading3({ className, children }) {
   return (
     <h3
-      className={`${className} text-lg font-semibold leading-normal text-secondary tablet:text-xl tablet:leading-normal`}
+      className={`${className} mb-[0.5rem] text-[2rem] font-medium leading-[1.2] text-secondary`}
     >
       {children}
     </h3>
