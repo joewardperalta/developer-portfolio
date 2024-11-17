@@ -8,7 +8,7 @@ import Title from "@/components/Typography/Title";
 import Image from "next/image";
 import Section from "@/components/Section";
 import Heading from "@/components/Typography/Heading";
-import TechCard from "@/components/cards/TechCard";
+import Heading3 from "@/components/Typography/Heading3";
 import ToggleSwitch from "@/components/ToggleSwitch";
 import ExperienceCard from "@/components/cards/ExperienceCard";
 import Project from "@/components/Project";
@@ -16,12 +16,14 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 // Data
-import technologies from "@/data/technologies.json";
 import experiences from "@/data/experiences.json";
 import education from "@/data/education.json";
 import projects from "@/data/projects.json";
 import contacts from "@/data/contacts.json";
 import SocialList from "@/components/SocialList";
+import SubHeading from "@/components/Typography/SubHeading";
+import Paragraph from "@/components/Typography/Paragraph";
+import SecondaryButton from "@/components/buttons/SecondaryButton";
 
 export default function Home() {
   const [
@@ -57,20 +59,29 @@ export default function Home() {
 
         {/* Technologies */}
         <Section id="technologies">
-          <Container>
-            <Column>
-              <Heading>Technologies</Heading>
+          <Container className="items-center">
+            <Column className="px-[6.75rem]">
+              <Heading3>Joeward Peralta</Heading3>
+              <SubHeading>
+                Computer Programming & Analysis Graduate
+              </SubHeading>
+              <Paragraph className="mb-16">
+                Full Stack Developer with 1 year of experience
+                specializing in web using
+                <span className="font-bold"> React</span>,
+                <span className="font-bold"> Next.js</span>, and
+                <span className="font-bold"> Tailwind CSS</span>.
+              </Paragraph>
+              <SecondaryButton>Download My Resume</SecondaryButton>
             </Column>
-          </Container>
-          <Container>
             <Column>
-              <ul className="grid grid-cols-3 justify-center gap-6 tablet:flex tablet:flex-wrap tablet:gap-x-12 tablet:gap-y-8">
-                {technologies.map((tech, index) => (
-                  <li key={index}>
-                    <TechCard title={tech.title} img={tech.img} />
-                  </li>
-                ))}
-              </ul>
+              <Image
+                className="max-h-[665px] max-w-[545px] rounded-[2rem] object-cover"
+                src="/Joeward Peralta Portrait.jpg"
+                alt="Joeward peralta's profile picture wearing a formal dress"
+                width={1000}
+                height={1333}
+              />
             </Column>
           </Container>
         </Section>
