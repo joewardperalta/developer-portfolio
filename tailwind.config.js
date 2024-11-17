@@ -10,8 +10,6 @@ module.exports = {
       colors: {
         primary: "var(--primary-color)",
         secondary: "var(--secondary-color)",
-        tertiary: "var(--tertiary-color)",
-        quaternary: "var(--quaternary-color)",
       },
       borderRadius: {
         default: "1.25rem",
