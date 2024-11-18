@@ -45,10 +45,16 @@ export default function ProductCard({
         <StatusBar complete={status === "complete" ? true : false} />
 
         <div
-          className={`${theme === "dark" ? "!text-primary" : "text-secondary"}`}
+          className={
+            theme === "dark" ? "!text-primary" : "text-secondary"
+          }
         >
           {/* Product title */}
-          <Heading3 className="mb-2 !text-primary">{role}</Heading3>
+          <Heading3
+            className={`${theme === "dark" ? "!text-primary" : "text-secondary"} mb-2`}
+          >
+            {role}
+          </Heading3>
 
           {/* Company name */}
           <p className="mb-2 text-[1.25rem] font-medium leading-[1.2]">
