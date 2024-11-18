@@ -155,7 +155,7 @@ export default function Home() {
         </Section>
 
         {/* Testimonials */}
-        <Section id="testimonials">
+        <Section className="bg-white" id="testimonials">
           <Container>
             <Column>
               {testimonials.map((testimony) => (
