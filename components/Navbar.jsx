@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Navbar() {
   return (
@@ -6,17 +7,6 @@ export default function Navbar() {
       <Logo />
       <Nav />
     </div>
-  );
-}
-
-function Logo() {
-  return (
-    <Link
-      className="text-[1.125rem] font-bold uppercase leading-[1.6] text-secondary"
-      href="#"
-    >
-      Joeward Peralta
-    </Link>
   );
 }
 
@@ -34,7 +24,7 @@ function Nav() {
           <Link href="#experience">Experience</Link>
         </li>
         <li>
-          <Link href="#portfolio">Portfolio</Link>
+          <Link href="#projects">Projects</Link>
         </li>
         <li>
           <Link href="#testimonials">Testimonials</Link>

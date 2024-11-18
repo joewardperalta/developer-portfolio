@@ -22,6 +22,7 @@ import experiences from "@/data/experiences.json";
 import projects from "@/data/projects.json";
 import contacts from "@/data/contacts.json";
 import SocialList from "@/components/SocialList";
+import Logo from "@/components/Logo";
 
 export default function Home() {
   const [
@@ -184,12 +185,42 @@ export default function Home() {
         </Section>
       </main>
 
-      <footer className="px-24 py-4">
+      <footer className="bg-white py-8">
+        <Container className="mb-10">
+          <Column>
+            <Logo />
+          </Column>
+          <Column>
+            <ul className="flex justify-end gap-8 font-medium text-secondary">
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="#about">About</Link>
+              </li>
+              <li>
+                <Link href="#experience">Experience</Link>
+              </li>
+              <li>
+                <Link href="#projects">Projects</Link>
+              </li>
+              <li>
+                <Link href="#testimonials">Testimonials</Link>
+              </li>
+            </ul>
+          </Column>
+        </Container>
+
         <Container>
           <Column>
-            <p className="text-center text-xs text-secondary">
-              © Joeward Peralta 2024. All rights reserved.
-            </p>
+            <Paragraph className="text-[0.75rem] font-bold uppercase">
+              Copyright 2024
+            </Paragraph>
+          </Column>
+          <Column>
+            <Paragraph className="text-end text-[0.75rem] font-bold uppercase">
+              Designed & Developed by Joeward Peralta
+            </Paragraph>
           </Column>
         </Container>
       </footer>
