@@ -94,7 +94,7 @@ export default function Home() {
             <Column className="space-y-[8.375rem]">
               {experiences.map((experience, index) => (
                 <ProductCard
-                  key={index}
+                  key={experience.id}
                   image={{
                     src: experience.image.src,
                     alt: experience.image.alt,
@@ -102,7 +102,7 @@ export default function Home() {
                   role={experience.role}
                   company={experience.company}
                   date={experience.date}
-                  description="Designed and developed an informational website for a local church using React, Next.js, and Tailwind CSS to create a user-friendly and engaging experience."
+                  description={experience.description}
                   links={{
                     github:
                       "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",

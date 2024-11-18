@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "image": {
       "src": "/images/The Apostolic Sanctuary of Canada Mockup Website.png",
       "alt": "Apostolic Sanctuary of Canada mockup website"
@@ -8,24 +9,25 @@
     "company": "Freelance",
     "date": {
       "start": {
-        "month": "Feb",
+        "month": "Jul",
         "year": "2024"
       },
       "end": {
-        "month": "Present",
-        "year": ""
+        "month": "Aug",
+        "year": "2024"
       }
     },
-    "description": "A web development agency that designs, builds, and maintains custom e-commerce websites for small businesses to enhance their online presence and growth.",
+    "description": "Designed and developed an informational website for a local church using React, Next.js, and Tailwind CSS to create a user-friendly and engaging experience.",
     "links": {
       "github": "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
       "website": "https://www.apostolicsanctuarycanada.ca/"
     }
   },
   {
+    "id": 2,
     "image": {
-      "src": "/images/The Apostolic Sanctuary of Canada Mockup Website.png",
-      "alt": "Apostolic Sanctuary of Canada mockup website"
+      "src": "/images/Inside Out Window Coverings Mockup.png",
+      "alt": "Inside Out Window Coverings mockup"
     },
     "role": "Full Stack Developer",
     "company": "Freelance",
@@ -39,10 +41,10 @@
         "year": ""
       }
     },
-    "description": "A web development agency that designs, builds, and maintains custom e-commerce websites for small businesses to enhance their online presence and growth.",
+    "description": "Created a brochure website for a small window covering business, showcasing their products using React, Next.js, and Tailwind CSS.",
     "links": {
-      "github": "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
-      "website": "https://www.apostolicsanctuarycanada.ca/"
+      "github": "https://github.com/joewardperalta/Insideout-Window-Coverings",
+      "website": "https://www.insideoutwindowcoverings.ca/"
     }
   }
 ]

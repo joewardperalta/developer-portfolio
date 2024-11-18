@@ -35,14 +35,14 @@ export default function ProductCard({
         className="h-full w-full min-w-[656px] rounded-[2rem] object-cover"
         src={image.src}
         alt={image.alt}
-        width={656}
-        height={480}
+        width={1000}
+        height={666}
       />
 
       {/* Product Body */}
       <div className="w-full px-[8.3125rem]">
         {/* Status of the product, "Complete" or "Development" */}
-        <StatusBar />
+        <StatusBar complete={status === "complete" ? true : false} />
 
         <div
           className={`${theme === "dark" ? "!text-primary" : "text-secondary"}`}
@@ -67,19 +67,24 @@ export default function ProductCard({
           <p className="mb-6">{description}</p>
 
           {/* Link to GitHub repo */}
-          <a className="mb-16 flex items-center gap-2 text-[1rem] font-bold leading-[1.5]">
+          <Link
+            href={links.github}
+            className="mb-16 flex items-center gap-2 text-[1rem] font-bold leading-[1.5]"
+            target="_blank"
+          >
             <Image
+              className="h-8 w-8"
               src={
                 theme === "dark"
                   ? "/vectors/arrow right light.svg"
                   : "/vectors/arrow right dark.svg"
               }
               alt="arrow right icon"
-              width={32}
-              height={32}
+              width={0}
+              height={0}
             />
             GitHub
-          </a>
+          </Link>
 
           {/* Action to view the site */}
           <Link href={links.website} target="_blank">
