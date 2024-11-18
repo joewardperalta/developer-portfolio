@@ -11,7 +11,7 @@ export default function SocialList({ className, light = true }) {
     <ul className={`${className} flex w-fit gap-6`}>
       {socials.map((social, index) => (
         <li key={index}>
-          <Link href={social.link}>
+          <Link href={social.link} target="_blank">
             <Image
               src={light ? social.img.light.src : social.img.dark.src}
               alt={social.img.alt}

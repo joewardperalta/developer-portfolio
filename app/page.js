@@ -149,25 +149,35 @@ export default function Home() {
           </Container>
         </Section>
 
-        <Section id="contacts">
+        <Section
+          className="bg-secondary desktop:py-[19rem]"
+          id="contacts"
+        >
           <Container>
             <Column>
-              <Heading>Contacts</Heading>
+              <Heading className="mb-[4.5rem] !font-bold !text-primary desktop:text-[12.5rem]">
+                Let&apos;s Talk
+              </Heading>
             </Column>
           </Container>
           <Container>
             <Column>
-              <ul className="flex w-full justify-between text-secondary tablet:text-[2rem] tablet:leading-normal">
-                {contacts.map((contact, index) => (
-                  <li
-                    className="border-b-[3px] border-b-primary transition duration-300 ease-in-out hover:border-b-[3px] hover:border-b-secondary hover:underline-offset-4"
-                    key={index}
+              <ul className="flex items-center justify-center gap-9">
+                <li>
+                  <Link
+                    className="flex items-center gap-[1.125rem] rounded-full border border-primary px-9 py-6 text-[1.25rem] leading-[1.2] text-primary"
+                    href="mailto:joeward_peralta@outlook.com"
                   >
-                    <Link href={contact.link} target="_blank">
-                      {contact.title}
-                    </Link>
-                  </li>
-                ))}
+                    <Image
+                      src="/vectors/instagram light.svg"
+                      alt="instagram icon"
+                      width={32}
+                      height={32}
+                    />
+                    joeward_peralta@outlook.com
+                  </Link>
+                </li>
+                <SocialList />
               </ul>
             </Column>
           </Container>
