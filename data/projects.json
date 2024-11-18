@@ -1,27 +1,26 @@
 [
   {
-    "img": {
-      "src": "/images/jlance.jpg",
-      "alt": "website's homepage showcasing the hero section"
+    "id": 1,
+    "image": {
+      "src": "/images/realistic screen mockup.png",
+      "alt": "Apostolic Sanctuary of Canada mockup website"
     },
-    "title": "JLANCE",
-    "description": "A web development agency that specializes in E-commerce, offering services for businesses and entreprises in a subscription based model.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React.js",
-      "Next.js",
-      "Tailwind CSS"
-    ],
-    "startDate": {
-      "month": "Oct",
-      "year": "2024"
+    "role": "JLANCE",
+    "company": "",
+    "date": {
+      "start": {
+        "month": "Feb",
+        "year": "2024"
+      },
+      "end": {
+        "month": "Present",
+        "year": ""
+      }
     },
-    "endDate": {
-      "month": "",
-      "year": "Present"
-    },
-    "link": "https://portfolio-website-swart-eta-20.vercel.app/"
+    "description": "A web development agency that designs, builds, and maintains custom e-commerce websites for small businesses to enhance their online presence and growth.",
+    "links": {
+      "github": "https://github.com/joewardperalta/jlance",
+      "website": "https://portfolio-website-swart-eta-20.vercel.app/"
+    }
   }
 ]

@@ -56,7 +56,7 @@ export default function Home() {
         </Section>
 
         {/* About */}
-        <Section id="about">
+        <Section className="bg-white" id="about">
           <Container className="items-center">
             <Column className="px-[6.75rem]">
               <Heading3>Joeward Peralta</Heading3>
@@ -120,21 +120,29 @@ export default function Home() {
         <Section id="projects">
           <Container>
             <Column>
-              <Heading>Personal Projects</Heading>
+              <Heading>Projects</Heading>
             </Column>
           </Container>
           <Container>
-            <Column className="space-y-12 laptop:flex laptop:gap-12 laptop:space-y-0">
-              {projects.map((project, index) => (
-                <Project
-                  key={index}
-                  title={project.title}
-                  description={project.description}
-                  img={project.img}
-                  startDate={project.startDate}
-                  endDate={project.endDate}
-                  tags={project.tags}
-                  link={project.link}
+            <Column className="space-y-[8.375rem]">
+              {projects.map((experience, index) => (
+                <ProductCard
+                  key={experience.id}
+                  image={{
+                    src: experience.image.src,
+                    alt: experience.image.alt,
+                  }}
+                  role={experience.role}
+                  company={experience.company}
+                  date={experience.date}
+                  description={experience.description}
+                  links={{
+                    github:
+                      "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
+                    website:
+                      "https://www.apostolicsanctuarycanada.ca/",
+                  }}
+                  mirror={index % 2 && true}
                 />
               ))}
             </Column>
