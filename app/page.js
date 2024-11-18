@@ -48,7 +48,7 @@ export default function Home() {
 
       <main>
         {/* Hero */}
-        <Section id="hero">
+        <Section className="desktop:py-36" id="hero">
           <Container>
             <Column className="text-center">
               <Title>Full Stack Web Developer</Title>
