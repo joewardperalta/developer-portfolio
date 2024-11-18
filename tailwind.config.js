@@ -15,9 +15,9 @@ module.exports = {
         default: "1.25rem",
       },
       screens: {
-        tablet: "744px",
-        laptop: "1056px",
-        desktop: "1440px",
+        tablet: "640px",
+        laptop: "1024px",
+        desktop: "1280px",
       },
     },
   },
