@@ -9,21 +9,19 @@ import Image from "next/image";
 import Section from "@/components/Section";
 import Heading from "@/components/Typography/Heading";
 import Heading3 from "@/components/Typography/Heading3";
-import ToggleSwitch from "@/components/ToggleSwitch";
-import ExperienceCard from "@/components/cards/ExperienceCard";
 import Project from "@/components/Project";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import SecondaryButton from "@/components/buttons/SecondaryButton";
+import ProductCard from "@/components/cards/ProductCard";
+import SubHeading from "@/components/Typography/SubHeading";
+import Paragraph from "@/components/Typography/Paragraph";
 
 // Data
 import experiences from "@/data/experiences.json";
-import education from "@/data/education.json";
 import projects from "@/data/projects.json";
 import contacts from "@/data/contacts.json";
 import SocialList from "@/components/SocialList";
-import SubHeading from "@/components/Typography/SubHeading";
-import Paragraph from "@/components/Typography/Paragraph";
-import SecondaryButton from "@/components/buttons/SecondaryButton";
 
 export default function Home() {
   const [
@@ -57,8 +55,8 @@ export default function Home() {
           </Container>
         </Section>
 
-        {/* Technologies */}
-        <Section id="technologies">
+        {/* About */}
+        <Section id="about">
           <Container className="items-center">
             <Column className="px-[6.75rem]">
               <Heading3>Joeward Peralta</Heading3>
@@ -87,38 +85,32 @@ export default function Home() {
         </Section>
 
         {/* Experience */}
-        <Section id="experience">
+        <Section className="bg-secondary" id="experience">
           <Container>
-            <Column>
-              <Heading className="tablet:text-left">
-                Experience
-              </Heading>
-            </Column>
-            <Column>
-              <ToggleSwitch
-                className="mb-8"
-                firstButtonTitle="Experience"
-                secondButtonTitle="Education"
-                firstButtonOnClick={() =>
-                  setExperienceAndEducationContent(experiences)
-                }
-                secondButtonOnClick={() =>
-                  setExperienceAndEducationContent(education)
-                }
-              ></ToggleSwitch>
-            </Column>
+            <Heading className="!text-primary">Experience</Heading>
           </Container>
+
           <Container>
-            <Column className="space-y-6 tablet:space-y-12">
-              {experienceAndEducationContent.map((content, index) => (
-                <ExperienceCard
+            <Column className="space-y-[8.375rem]">
+              {experiences.map((experience, index) => (
+                <ProductCard
                   key={index}
-                  img={content.img}
-                  title={content.title}
-                  startDate={content.date.start}
-                  role={content.role}
-                  endDate={content.date.end}
-                  bullets={content.bullets}
+                  image={{
+                    src: experience.image.src,
+                    alt: experience.image.alt,
+                  }}
+                  role={experience.role}
+                  company={experience.company}
+                  date={experience.date}
+                  description="Designed and developed an informational website for a local church using React, Next.js, and Tailwind CSS to create a user-friendly and engaging experience."
+                  links={{
+                    github:
+                      "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
+                    website:
+                      "https://www.apostolicsanctuarycanada.ca/",
+                  }}
+                  theme="dark"
+                  mirror={index % 2 && true}
                 />
               ))}
             </Column>

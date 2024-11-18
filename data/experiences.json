@@ -1,13 +1,14 @@
 [
   {
-    "img": {
-      "src": "/images/upwork icon.png",
-      "alt": "The Apostolic Sanctuary of Canada logo"
+    "image": {
+      "src": "/images/The Apostolic Sanctuary of Canada Mockup Website.png",
+      "alt": "Apostolic Sanctuary of Canada mockup website"
     },
-    "title": "Freelance Full-Stack Developer",
+    "role": "Full Stack Developer",
+    "company": "Freelance",
     "date": {
       "start": {
-        "month": "February",
+        "month": "Feb",
         "year": "2024"
       },
       "end": {
@@ -15,16 +16,33 @@
         "year": ""
       }
     },
-    "role": "",
-    "bullets": [
-      "Designed and developed a mobile-responsive user-friendly, and accessible website using Figma, HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS",
-      "Developed server-side applications and RESTful APIs using Node.js and Express; integrated third-party APIs and maintained secure data handling",
-      "Enhanced web application speed and efficiency by optimizing assets, implementing caching strategies, and using performance monitoring tools",
-      "Performed unit testing, integration testing, and debugging to ensure functionality and quality; utilized tools like Jest, Cypress, and Postman",
-      "Used Git for version control and collaborated on code management through GitHub",
-      "Deployed and maintained applications on Vercel",
-      "Collaborated with clients to define project goals, requirements, and timelines",
-      "Managed project timelines and deliverables, communicated progress, and ensured client satisfaction through regular updates and feedback sessions"
-    ]
+    "description": "A web development agency that designs, builds, and maintains custom e-commerce websites for small businesses to enhance their online presence and growth.",
+    "links": {
+      "github": "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
+      "website": "https://www.apostolicsanctuarycanada.ca/"
+    }
+  },
+  {
+    "image": {
+      "src": "/images/The Apostolic Sanctuary of Canada Mockup Website.png",
+      "alt": "Apostolic Sanctuary of Canada mockup website"
+    },
+    "role": "Full Stack Developer",
+    "company": "Freelance",
+    "date": {
+      "start": {
+        "month": "Feb",
+        "year": "2024"
+      },
+      "end": {
+        "month": "Present",
+        "year": ""
+      }
+    },
+    "description": "A web development agency that designs, builds, and maintains custom e-commerce websites for small businesses to enhance their online presence and growth.",
+    "links": {
+      "github": "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
+      "website": "https://www.apostolicsanctuarycanada.ca/"
+    }
   }
 ]
