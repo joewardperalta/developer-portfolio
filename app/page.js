@@ -1,4 +1,11 @@
 "use client";
+
+// Data
+import experiences from "@/data/experiences.json";
+import projects from "@/data/projects.json";
+import testimonials from "@/data/testimonials.json";
+
+// Components
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import Column from "@/components/Column";
 import Container from "@/components/Container";
@@ -16,13 +23,9 @@ import SecondaryButton from "@/components/buttons/SecondaryButton";
 import ProductCard from "@/components/cards/ProductCard";
 import SubHeading from "@/components/Typography/SubHeading";
 import Paragraph from "@/components/Typography/Paragraph";
-
-// Data
-import experiences from "@/data/experiences.json";
-import projects from "@/data/projects.json";
-import contacts from "@/data/contacts.json";
 import SocialList from "@/components/SocialList";
 import Logo from "@/components/Logo";
+import TestimonialCard from "@/components/cards/TestimonialCard";
 
 export default function Home() {
   const [
@@ -118,6 +121,7 @@ export default function Home() {
           </Container>
         </Section>
 
+        {/* Projects */}
         <Section id="projects">
           <Container>
             <Column>
@@ -150,6 +154,25 @@ export default function Home() {
           </Container>
         </Section>
 
+        {/* Testimonials */}
+        <Section id="testimonials">
+          <Container>
+            <Column>
+              {testimonials.map((testimony) => (
+                <TestimonialCard
+                  key={testimony.id}
+                  quote={testimony.quote}
+                  name={testimony.name}
+                  position={testimony.position}
+                  organization={testimony.organization}
+                  logo={testimony.logo}
+                />
+              ))}
+            </Column>
+          </Container>
+        </Section>
+
+        {/* Contact */}
         <Section
           className="bg-secondary desktop:py-[19rem]"
           id="contacts"
@@ -185,6 +208,7 @@ export default function Home() {
         </Section>
       </main>
 
+      {/*  Footer */}
       <footer className="bg-white py-8">
         <Container className="mb-10">
           <Column>

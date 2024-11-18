@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "quote": "We requested Mr. Joeward Peralta to design, build, and maintain our church website, and he delivered a straightforward solution that met the needs of both local and international visitors. We highly recommend his services and look forward to working with him on all our future website design needs.",
+    "name": "John David Fernan",
+    "position": "Head Pastor",
+    "organization": "The Apostolic Sanctuary of Canada",
+    "logo": {
+      "src": "/images/tasc.png",
+      "alt": "The Apostolic Sanctuary of Canada logo"
+    }
+  }
+]
