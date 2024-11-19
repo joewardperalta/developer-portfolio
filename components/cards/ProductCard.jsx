@@ -33,7 +33,7 @@ export default function ProductCard({
     >
       {/* Product Image */}
       <Image
-        className="h-auto w-[5000px] max-w-[680px] rounded-[1.125rem]"
+        className="h-auto rounded-[1.125rem] laptop:w-[5000px] laptop:max-w-[680px]"
         src={image.src}
         alt={image.alt}
         width={1000}
