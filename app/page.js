@@ -76,7 +76,7 @@ export default function Home() {
             <Column>
               <Image
                 className="rounded-[1.125rem] object-cover"
-                src="/Joeward Peralta Portrait.jpg"
+                src="/images/Joeward Peralta Portrait.jpg"
                 alt="Joeward peralta's profile picture wearing a formal dress"
                 width={1000}
                 height={1333}
