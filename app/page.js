@@ -212,13 +212,11 @@ export default function Home() {
       </main>
 
       {/*  Footer */}
-      {/* <footer className="bg-white py-8">
-        <Container className="mb-10">
-          <Column>
+      <footer className="space-y-12 bg-white py-8">
+        <Container className="mb-10 space-y-8 laptop:space-y-0">
+          <Column className="flex flex-col gap-8 tablet:flex-row tablet:items-center tablet:justify-between">
             <Logo />
-          </Column>
-          <Column>
-            <ul className="flex justify-end gap-8 font-medium text-secondary">
+            <ul className="flex flex-wrap gap-4 font-medium text-secondary tablet:flex-nowrap tablet:gap-8 laptop:justify-end">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -239,18 +237,12 @@ export default function Home() {
         </Container>
 
         <Container>
-          <Column>
-            <Paragraph className="text-[0.75rem] font-bold uppercase">
-              Copyright 2024
-            </Paragraph>
-          </Column>
-          <Column>
-            <Paragraph className="text-end text-[0.75rem] font-bold uppercase">
-              Designed & Developed by Joeward Peralta
-            </Paragraph>
+          <Column className="flex flex-col gap-4 text-[0.75rem] font-bold uppercase tablet:flex-row tablet:items-center tablet:justify-between">
+            <p>Copyright 2024</p>
+            <p>Designed & Developed by Joeward Peralta</p>
           </Column>
         </Container>
-      </footer> */}
+      </footer>
     </>
   );
 }
