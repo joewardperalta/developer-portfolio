@@ -61,9 +61,8 @@ export default function Home() {
 
         {/* About */}
         <Section className="bg-white" id="about">
-          <Container className="flex-col-reverse items-center">
-            {/* Description */}
-            <Column className="mt-[1.5rem]">
+          <Container className="flex-col-reverse items-center tablet:flex-row">
+            <Column className="mt-[1.5rem] tablet:mt-0 tablet:pr-[4.25rem] laptop:px-[5.75rem] desktop:px-[7.25rem]">
               <Heading3>Joeward Peralta</Heading3>
               <SubHeading>Full Stack Developer</SubHeading>
               <Paragraph className="text-gray mb-8">
@@ -79,8 +78,6 @@ export default function Home() {
               </Paragraph>
               <SecondaryButton>Download My Resume</SecondaryButton>
             </Column>
-
-            {/* Author's Image */}
             <Column>
               <Image
                 className="rounded-[1.125rem] object-cover"
