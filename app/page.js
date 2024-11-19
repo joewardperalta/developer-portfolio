@@ -128,12 +128,7 @@ export default function Home() {
                   company={experience.company}
                   date={experience.date}
                   description={experience.description}
-                  links={{
-                    github:
-                      "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
-                    website:
-                      "https://www.apostolicsanctuarycanada.ca/",
-                  }}
+                  links={experience.links}
                   mirror={index % 2 && true}
                   status="development"
                 />
