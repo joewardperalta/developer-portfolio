@@ -175,27 +175,28 @@ export default function Home() {
         </Section>
 
         {/* Contact */}
-        {/* <Section
+        <Section
           className="bg-secondary desktop:py-[19rem]"
           id="contacts"
         >
           <Container>
             <Column>
-              <Heading className="mb-[4.5rem] !font-bold !text-primary desktop:text-[12.5rem]">
+              <Heading className="text-[4rem] !font-bold !text-primary tablet:text-[7.5rem] laptop:text-[11rem] desktop:text-[12.5rem]">
                 Let&apos;s Talk
               </Heading>
             </Column>
           </Container>
           <Container>
             <Column>
-              <ul className="flex items-center justify-center gap-9">
+              <ul className="flex flex-col items-center justify-center gap-9 laptop:flex-row">
                 <li>
                   <Link
-                    className="flex items-center gap-[1.125rem] rounded-full border border-primary px-9 py-6 text-[1.25rem] leading-[1.2] text-primary"
+                    className="flex items-center gap-[1rem] rounded-full border border-primary px-8 py-5 text-[1rem] leading-[1.2] text-primary tablet:text-[1.125rem]"
                     href="mailto:joeward_peralta@outlook.com"
                   >
                     <Image
-                      src="/vectors/instagram light.svg"
+                      className="h-5 w-5 tablet:h-6 tablet:w-6"
+                      src="/images/email.png"
                       alt="instagram icon"
                       width={32}
                       height={32}
@@ -207,7 +208,7 @@ export default function Home() {
               </ul>
             </Column>
           </Container>
-        </Section> */}
+        </Section>
       </main>
 
       {/*  Footer */}
