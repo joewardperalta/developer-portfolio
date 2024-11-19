@@ -97,7 +97,7 @@ export default function Home() {
           </Container>
 
           <Container>
-            <Column className="space-y-[8.375rem]">
+            <Column className="space-y-[3.5rem] tablet:space-y-[5rem] laptop:space-y-[8.375rem]">
               {experiences.map((experience, index) => (
                 <ProductCard
                   key={experience.id}
@@ -131,7 +131,7 @@ export default function Home() {
             </Column>
           </Container>
           <Container>
-            <Column className="space-y-[8.375rem]">
+            <Column className="space-y-[3.5rem] tablet:space-y-[5rem] laptop:space-y-[8.375rem]">
               {projects.map((experience, index) => (
                 <ProductCard
                   key={experience.id}
