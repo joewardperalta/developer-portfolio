@@ -66,7 +66,12 @@ export default function Home() {
                 UI/UX design to craft intuitive, accessible
                 interfaces.
               </Paragraph>
-              <SecondaryButton>Download My Resume</SecondaryButton>
+              <Link
+                href="https://drive.google.com/file/d/1SlKJC27CiwcqlCf2k49rROEi60G2Wlq9/view?usp=sharing"
+                target="_blank"
+              >
+                <SecondaryButton>View My Resume</SecondaryButton>
+              </Link>
             </Column>
             <Column>
               <Image
