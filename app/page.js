@@ -28,18 +28,6 @@ import Logo from "@/components/Logo";
 import TestimonialCard from "@/components/cards/TestimonialCard";
 
 export default function Home() {
-  const [
-    experienceAndEducationContent,
-    setExperienceAndEducationContent,
-  ] = useState([]);
-
-  useEffect(() => {
-    // set the default content for the experience section
-    if (experiences) {
-      setExperienceAndEducationContent(experiences);
-    }
-  }, []);
-
   return (
     <>
       <header>
@@ -54,7 +42,9 @@ export default function Home() {
               <Title>Full Stack Web Developer</Title>
               <SubTitle>Based in Toronto, Canada</SubTitle>
               <SocialList className="mx-auto mb-12" light={false} />
-              <PrimaryButton>View My Projects</PrimaryButton>
+              <Link href="#projects">
+                <PrimaryButton>View My Projects</PrimaryButton>
+              </Link>
             </Column>
           </Container>
         </Section>
