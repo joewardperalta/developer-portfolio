@@ -157,7 +157,7 @@ export default function Home() {
         </Section>
 
         {/* Testimonials */}
-        {/* <Section className="bg-white" id="testimonials">
+        <Section className="bg-white" id="testimonials">
           <Container>
             <Column>
               {testimonials.map((testimony) => (
@@ -172,7 +172,7 @@ export default function Home() {
               ))}
             </Column>
           </Container>
-        </Section> */}
+        </Section>
 
         {/* Contact */}
         {/* <Section
