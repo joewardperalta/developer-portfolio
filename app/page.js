@@ -91,7 +91,7 @@ export default function Home() {
         </Section>
 
         {/* Experience */}
-        {/* <Section className="bg-secondary" id="experience">
+        <Section className="bg-secondary" id="experience">
           <Container>
             <Heading className="!text-primary">Experience</Heading>
           </Container>
@@ -121,7 +121,7 @@ export default function Home() {
               ))}
             </Column>
           </Container>
-        </Section> */}
+        </Section>
 
         {/* Projects */}
         {/* <Section id="projects">

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Heading3 from "../Typography/Heading3";
 import SecondaryButton from "../buttons/SecondaryButton";
+import Paragraph from "../Typography/Paragraph";
 
 export default function ProductCard({
   image = { src: "/", alt: "" },
@@ -28,11 +29,11 @@ export default function ProductCard({
 }) {
   return (
     <div
-      className={`flex items-center ${mirror && "flex-row-reverse"}`}
+      className={`flex flex-col items-center ${mirror ? "laptop:flex-row-reverse" : "laptop:flex-row"}`}
     >
       {/* Product Image */}
       <Image
-        className="h-full w-full min-w-[656px] rounded-[2rem] object-cover"
+        className="h-auto w-[5000px] max-w-[680px] rounded-[1.125rem]"
         src={image.src}
         alt={image.alt}
         width={1000}
@@ -40,57 +41,41 @@ export default function ProductCard({
       />
 
       {/* Product Body */}
-      <div className="w-full px-[8.3125rem]">
-        {/* Status of the product, "Complete" or "Development" */}
-        <StatusBar complete={status === "complete" ? true : false} />
+      <div className="mt-6 w-full laptop:mt-0 laptop:px-[5.75rem] desktop:px-[7.25rem]">
+        <div className="flex flex-col justify-between tablet:flex-row-reverse laptop:flex-col">
+          {/* Status of the product, "complete" or "development" */}
+          <StatusBar
+            complete={status === "complete" ? true : false}
+          />
+
+          {/* Product title */}
+          <Heading3
+            className={`${theme === "dark" ? "!text-primary" : "text-secondary"}`}
+          >
+            {role}
+          </Heading3>
+        </div>
 
         <div
           className={
             theme === "dark" ? "!text-primary" : "text-secondary"
           }
         >
-          {/* Product title */}
-          <Heading3
-            className={`${theme === "dark" ? "!text-primary" : "text-secondary"} mb-2`}
-          >
-            {role}
-          </Heading3>
+          <div className="flex flex-col justify-between tablet:flex-row laptop:flex-col">
+            {/* Company name */}
+            <Paragraph className="text-[1.25rem] font-medium leading-[1.2] !text-primary">
+              {company}
+            </Paragraph>
 
-          {/* Company name */}
-          <p className="mb-2 text-[1.25rem] font-medium leading-[1.2]">
-            {company}
-          </p>
-
-          {/* Date */}
-          <div>
-            <p className="mb-6 text-[1rem] font-medium leading-[1.2]">
+            {/* Date */}
+            <Paragraph className="mb-6 text-[1rem] font-medium leading-[1.2] !text-primary">
               {date.start.month} {date.start.year} - {date.end.month}{" "}
               {date.end.year}
-            </p>
+            </Paragraph>
           </div>
 
           {/* Description */}
-          <p className="mb-6">{description}</p>
-
-          {/* Link to GitHub repo */}
-          <Link
-            href={links.github}
-            className="mb-16 flex items-center gap-2 text-[1rem] font-bold leading-[1.5]"
-            target="_blank"
-          >
-            <Image
-              className="h-8 w-8"
-              src={
-                theme === "dark"
-                  ? "/vectors/arrow right light.svg"
-                  : "/vectors/arrow right dark.svg"
-              }
-              alt="arrow right icon"
-              width={0}
-              height={0}
-            />
-            GitHub
-          </Link>
+          <p className="text-lightGray mb-10">{description}</p>
 
           {/* Action to view the site */}
           <Link href={links.website} target="_blank">
@@ -114,7 +99,7 @@ function StatusBar({ complete = true }) {
 
   return (
     <div
-      className={`mb-2 w-fit rounded-full border px-3 py-1 text-[0.875rem] leading-[1.2] ${complete ? style.completed : style.development}`}
+      className={`mb-2 w-fit rounded-full border px-4 py-2 text-[0.75rem] leading-[1.2] ${complete ? style.completed : style.development}`}
     >
       <p className="text-nowrap">
         {complete ? "Project Completed" : "In Development"}
