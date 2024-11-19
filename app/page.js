@@ -61,24 +61,28 @@ export default function Home() {
 
         {/* About */}
         <Section className="bg-white" id="about">
-          <Container className="items-center">
-            <Column className="px-[6.75rem]">
+          <Container className="flex-col-reverse items-center">
+            {/* Description */}
+            <Column className="mt-[1.5rem]">
               <Heading3>Joeward Peralta</Heading3>
               <SubHeading>
                 Computer Programming & Analysis Graduate
               </SubHeading>
               <Paragraph className="mb-16">
-                Full Stack Developer with 1 year of experience
-                specializing in web using
-                <span className="font-bold"> React</span>,
-                <span className="font-bold"> Next.js</span>, and
-                <span className="font-bold"> Tailwind CSS</span>.
+                One year of experience in web development,
+                specializing in technologies like
+                <span> React</span>,<span> Next.js</span>,
+                <span> Node.js</span>,<span> Tailwind CSS</span>, and
+                MongoDB, and currently enhancing my skills in UI/UX
+                design to craft intuitive, accessible interfaces.
               </Paragraph>
               <SecondaryButton>Download My Resume</SecondaryButton>
             </Column>
+
+            {/* Author's Image */}
             <Column>
               <Image
-                className="max-h-[665px] max-w-[545px] rounded-[2rem] object-cover"
+                className="rounded-[1.125rem] object-cover"
                 src="/Joeward Peralta Portrait.jpg"
                 alt="Joeward peralta's profile picture wearing a formal dress"
                 width={1000}
@@ -89,7 +93,7 @@ export default function Home() {
         </Section>
 
         {/* Experience */}
-        <Section className="bg-secondary" id="experience">
+        {/* <Section className="bg-secondary" id="experience">
           <Container>
             <Heading className="!text-primary">Experience</Heading>
           </Container>
@@ -119,10 +123,10 @@ export default function Home() {
               ))}
             </Column>
           </Container>
-        </Section>
+        </Section> */}
 
         {/* Projects */}
-        <Section id="projects">
+        {/* <Section id="projects">
           <Container>
             <Column>
               <Heading>Projects</Heading>
@@ -152,10 +156,10 @@ export default function Home() {
               ))}
             </Column>
           </Container>
-        </Section>
+        </Section> */}
 
         {/* Testimonials */}
-        <Section className="bg-white" id="testimonials">
+        {/* <Section className="bg-white" id="testimonials">
           <Container>
             <Column>
               {testimonials.map((testimony) => (
@@ -170,10 +174,10 @@ export default function Home() {
               ))}
             </Column>
           </Container>
-        </Section>
+        </Section> */}
 
         {/* Contact */}
-        <Section
+        {/* <Section
           className="bg-secondary desktop:py-[19rem]"
           id="contacts"
         >
@@ -205,11 +209,11 @@ export default function Home() {
               </ul>
             </Column>
           </Container>
-        </Section>
+        </Section> */}
       </main>
 
       {/*  Footer */}
-      <footer className="bg-white py-8">
+      {/* <footer className="bg-white py-8">
         <Container className="mb-10">
           <Column>
             <Logo />
@@ -247,7 +251,7 @@ export default function Home() {
             </Paragraph>
           </Column>
         </Container>
-      </footer>
+      </footer> */}
     </>
   );
 }
