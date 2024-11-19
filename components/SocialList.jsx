@@ -11,7 +11,11 @@ export default function SocialList({ className, light = true }) {
     <ul className={`${className} flex w-fit gap-6`}>
       {socials.map((social, index) => (
         <li key={index}>
-          <Link href={social.link} target="_blank">
+          <Link
+            className="inline-block transition-all ease-in-out hover:scale-125"
+            href={social.link}
+            target="_blank"
+          >
             <Image
               className="h-5 w-5 tablet:h-7 tablet:w-7"
               src={light ? social.img.light.src : social.img.dark.src}
