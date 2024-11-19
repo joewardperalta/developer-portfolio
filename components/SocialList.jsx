@@ -13,6 +13,7 @@ export default function SocialList({ className, light = true }) {
         <li key={index}>
           <Link href={social.link} target="_blank">
             <Image
+              className="h-5 w-5 tablet:h-7 tablet:w-7"
               src={light ? social.img.light.src : social.img.dark.src}
               alt={social.img.alt}
               width={32}
