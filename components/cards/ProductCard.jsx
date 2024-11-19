@@ -63,12 +63,12 @@ export default function ProductCard({
         >
           <div className="flex flex-col justify-between tablet:flex-row laptop:flex-col">
             {/* Company name */}
-            <Paragraph className="text-[1.25rem] font-medium leading-[1.2] !text-primary">
+            <Paragraph className="text-[1.25rem] font-medium leading-[1.2] !text-inherit">
               {company}
             </Paragraph>
 
             {/* Date */}
-            <Paragraph className="mb-6 text-[1rem] font-medium leading-[1.2] text-inherit">
+            <Paragraph className="mb-6 text-[1rem] font-medium leading-[1.2] !text-inherit">
               {date.start.month} {date.start.year} - {date.end.month}{" "}
               {date.end.year}
             </Paragraph>
