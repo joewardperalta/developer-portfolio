@@ -198,11 +198,11 @@ export default function Home() {
       </main>
 
       {/*  Footer */}
-      <footer className="space-y-12 bg-white py-8">
+      <footer className="space-y-12 bg-[#171616] py-8 text-primary">
         <Container className="mb-10 space-y-8 laptop:space-y-0">
           <Column className="flex flex-col gap-8 tablet:flex-row tablet:items-center tablet:justify-between">
-            <Logo />
-            <ul className="flex flex-wrap gap-4 font-medium text-secondary tablet:flex-nowrap tablet:gap-8 laptop:justify-end">
+            <Logo className="!text-primary" />
+            <ul className="flex flex-wrap gap-4 font-medium tablet:flex-nowrap tablet:gap-8 laptop:justify-end">
               <li>
                 <Link href="/">Home</Link>
               </li>
