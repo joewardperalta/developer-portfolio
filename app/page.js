@@ -172,7 +172,7 @@ export default function Home() {
               <ul className="flex flex-col items-center justify-center gap-9 laptop:flex-row">
                 <li>
                   <Link
-                    className="flex items-center gap-[1rem] rounded-full border border-primary px-8 py-5 text-[1rem] leading-[1.2] text-primary tablet:text-[1.125rem]"
+                    className="flex items-center gap-[1rem] rounded-full border border-primary px-8 py-5 text-[1rem] leading-[1.2] text-primary transition-all ease-in-out hover:scale-105 tablet:text-[1.125rem]"
                     href="mailto:joeward_peralta@outlook.com"
                   >
                     <Image
