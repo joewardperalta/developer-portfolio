@@ -33,12 +33,12 @@
     "company": "Freelance",
     "date": {
       "start": {
-        "month": "Feb",
+        "month": "June",
         "year": "2024"
       },
       "end": {
-        "month": "Present",
-        "year": ""
+        "month": "Jul",
+        "year": "2024"
       }
     },
     "description": "Created a brochure website for a small window covering business, showcasing their products using React, Next.js, and Tailwind CSS.",
