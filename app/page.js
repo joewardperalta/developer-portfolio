@@ -135,6 +135,7 @@ export default function Home() {
                       "https://www.apostolicsanctuarycanada.ca/",
                   }}
                   mirror={index % 2 && true}
+                  status="development"
                 />
               ))}
             </Column>
