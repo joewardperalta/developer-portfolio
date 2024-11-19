@@ -167,7 +167,7 @@ export default function Home() {
         >
           <Container>
             <Column>
-              <Heading className="text-[4rem] !font-bold !text-primary tablet:text-[7.5rem] laptop:text-[11rem] desktop:text-[12.5rem]">
+              <Heading className="!text-[4rem] !font-bold !text-primary tablet:!text-[7.5rem] laptop:!text-[11rem] desktop:!text-[12.5rem]">
                 Let&apos;s Talk
               </Heading>
             </Column>
