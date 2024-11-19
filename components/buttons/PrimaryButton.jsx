@@ -9,7 +9,7 @@ export default function PrimaryButton({
   return (
     <Button
       ref={ref}
-      className={`${className} bg-secondary text-primary transition-all ease-in-out hover:-translate-y-1 hover:shadow-md hover:shadow-[#B1AFAC]`}
+      className={`${className} bg-secondary text-primary`}
       onClick={onClick}
     >
       {children}
