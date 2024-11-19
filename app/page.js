@@ -65,16 +65,17 @@ export default function Home() {
             {/* Description */}
             <Column className="mt-[1.5rem]">
               <Heading3>Joeward Peralta</Heading3>
-              <SubHeading>
-                Computer Programming & Analysis Graduate
-              </SubHeading>
-              <Paragraph className="mb-16">
+              <SubHeading>Full Stack Developer</SubHeading>
+              <Paragraph className="text-gray mb-8">
                 One year of experience in web development,
                 specializing in technologies like
-                <span> React</span>,<span> Next.js</span>,
-                <span> Node.js</span>,<span> Tailwind CSS</span>, and
-                MongoDB, and currently enhancing my skills in UI/UX
-                design to craft intuitive, accessible interfaces.
+                <span className="text-secondary"> React</span>,
+                <span className="text-secondary"> Next.js</span>,
+                <span className="text-secondary"> Node.js</span>,
+                <span className="text-secondary"> Tailwind CSS</span>,
+                and MongoDB, and currently enhancing my skills in
+                UI/UX design to craft intuitive, accessible
+                interfaces.
               </Paragraph>
               <SecondaryButton>Download My Resume</SecondaryButton>
             </Column>

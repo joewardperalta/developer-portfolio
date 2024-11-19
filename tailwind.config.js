@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         primary: "var(--primary-color)",
         secondary: "var(--secondary-color)",
+        gray: "#6A6767",
+        lightGray: "#A39E9E",
       },
       borderRadius: {
         default: "1.25rem",
