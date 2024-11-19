@@ -68,14 +68,18 @@ export default function ProductCard({
             </Paragraph>
 
             {/* Date */}
-            <Paragraph className="mb-6 text-[1rem] font-medium leading-[1.2] !text-primary">
+            <Paragraph className="mb-6 text-[1rem] font-medium leading-[1.2] text-inherit">
               {date.start.month} {date.start.year} - {date.end.month}{" "}
               {date.end.year}
             </Paragraph>
           </div>
 
           {/* Description */}
-          <p className="text-lightGray mb-10">{description}</p>
+          <p
+            className={`mb-10 ${theme === "dark" ? "text-lightGray" : "text-gray"}`}
+          >
+            {description}
+          </p>
 
           {/* Action to view the site */}
           <Link href={links.website} target="_blank">

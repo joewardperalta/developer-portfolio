@@ -124,7 +124,7 @@ export default function Home() {
         </Section>
 
         {/* Projects */}
-        {/* <Section id="projects">
+        <Section id="projects">
           <Container>
             <Column>
               <Heading>Projects</Heading>
@@ -154,7 +154,7 @@ export default function Home() {
               ))}
             </Column>
           </Container>
-        </Section> */}
+        </Section>
 
         {/* Testimonials */}
         {/* <Section className="bg-white" id="testimonials">
