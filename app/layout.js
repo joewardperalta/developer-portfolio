@@ -8,7 +8,7 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata = {
-  title: "Joeward Peralta",
+  title: "Joeward Peralta | Full Stack Developer",
   description: "Joeward Peralta",
 };
 
