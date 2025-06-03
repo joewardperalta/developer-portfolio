@@ -32,19 +32,16 @@ function Nav({ ref, toggleNav }) {
       <nav>
         <ul className="flex flex-col gap-8 px-6 py-[10rem] pr-[5rem] text-[1rem] font-medium leading-normal text-primary laptop:flex-row laptop:px-0 laptop:py-0 laptop:text-secondary">
           <li onClick={toggleNav}>
-            <Link href="#about">About</Link>
+            <NavLink href="#about">About</NavLink>
           </li>
           <li onClick={toggleNav}>
-            <Link href="#experience">Experience</Link>
+            <NavLink href="#projects">Projects</NavLink>
           </li>
           <li onClick={toggleNav}>
-            <Link href="#projects">Projects</Link>
+            <NavLink href="#testimonials">Testimonials</NavLink>
           </li>
           <li onClick={toggleNav}>
-            <Link href="#testimonials">Testimonials</Link>
-          </li>
-          <li onClick={toggleNav}>
-            <Link href="#contacts">Contact</Link>
+            <NavLink href="#contacts">Contact</NavLink>
           </li>
         </ul>
       </nav>
@@ -66,5 +63,18 @@ function HamburgerButton({ navRef, toggleNav }) {
       <Bar />
       <Bar />
     </button>
+  );
+}
+
+function NavLink({ children, href }) {
+  return (
+    <div>
+      <Link
+        className="after:block after:h-[1.8px] after:w-0 after:bg-black after:transition-all after:hover:w-full after:hover:transition-all"
+        href={href}
+      >
+        {children}
+      </Link>
+    </div>
   );
 }
