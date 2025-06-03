@@ -2,25 +2,51 @@
   {
     "id": 1,
     "image": {
-      "src": "/images/realistic screen mockup.png",
+      "src": "/images/The Apostolic Sanctuary of Canada Mockup Website.png",
       "alt": "Apostolic Sanctuary of Canada mockup website"
     },
-    "role": "JLANCE",
-    "company": "Full Stack Developer",
+    "role": "Apostolic Sanctuary of Canada",
+    "company": "Freelance",
     "date": {
       "start": {
-        "month": "Feb",
+        "month": "July",
         "year": "2024"
       },
       "end": {
-        "month": "Present",
-        "year": ""
+        "month": "August",
+        "year": "2024"
       }
     },
-    "description": "A web development agency that designs, builds, and maintains custom e-commerce websites for small businesses to enhance their online presence and growth.",
+    "description": "Designed and developed an informational website for a local church using React, Next.js, and Tailwind CSS to create a user-friendly and engaging experience.",
     "links": {
-      "github": "https://github.com/joewardperalta/jlance",
-      "website": "https://portfolio-website-swart-eta-20.vercel.app/"
-    }
+      "github": "https://github.com/joewardperalta/The-Apostolic-Sanctuary-of-Canada",
+      "website": "https://www.apostolicsanctuarycanada.ca/"
+    },
+    "isCompleted": true
+  },
+  {
+    "id": 2,
+    "image": {
+      "src": "/images/Inside Out Window Coverings Mockup.png",
+      "alt": "Inside Out Window Coverings mockup"
+    },
+    "role": "Insideout Window Coverings",
+    "company": "Freelance",
+    "date": {
+      "start": {
+        "month": "June",
+        "year": "2024"
+      },
+      "end": {
+        "month": "July",
+        "year": "2024"
+      }
+    },
+    "description": "Created a brochure website for a small window covering business, showcasing their products using React, Next.js, and Tailwind CSS.",
+    "links": {
+      "github": "https://github.com/joewardperalta/Insideout-Window-Coverings",
+      "website": "https://www.insideoutwindowcoverings.ca/"
+    },
+    "isCompleted": true
   }
 ]

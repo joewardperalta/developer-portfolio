@@ -6,7 +6,7 @@ import Paragraph from "../Typography/Paragraph";
 
 export default function ProductCard({
   image = { src: "/", alt: "" },
-  status = "complete",
+  isCompleted = false,
   role = "Role",
   company = "Company Name",
   date = {
@@ -44,13 +44,11 @@ export default function ProductCard({
       <div className="mt-6 w-full laptop:mt-0 laptop:px-[5.75rem] desktop:px-[7.25rem]">
         <div className="flex flex-col justify-between tablet:flex-row-reverse laptop:flex-col">
           {/* Status of the product, "complete" or "development" */}
-          <StatusBar
-            complete={status === "complete" ? true : false}
-          />
+          <StatusBar complete={isCompleted ? true : false} />
 
           {/* Product title */}
           <Heading3
-            className={`${theme === "dark" ? "!text-primary" : "text-secondary"}`}
+            className={`${theme === "dark" ? "!text-primary" : "mb-1 text-secondary"}`}
           >
             {role}
           </Heading3>
@@ -62,11 +60,6 @@ export default function ProductCard({
           }
         >
           <div className="flex flex-col justify-between tablet:flex-row laptop:flex-col">
-            {/* Company name */}
-            <Paragraph className="text-[1.25rem] font-medium leading-[1.2] !text-inherit">
-              {company}
-            </Paragraph>
-
             {/* Date */}
             <Paragraph className="mb-6 text-[1rem] font-medium leading-[1.2] !text-inherit">
               {date.start.month} {date.start.year} - {date.end.month}{" "}

@@ -1,7 +1,6 @@
 "use client";
 
 // Data
-import experiences from "@/data/experiences.json";
 import projects from "@/data/projects.json";
 import testimonials from "@/data/testimonials.json";
 
@@ -16,8 +15,6 @@ import Image from "next/image";
 import Section from "@/components/Section";
 import Heading from "@/components/Typography/Heading";
 import Heading3 from "@/components/Typography/Heading3";
-import Project from "@/components/Project";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import ProductCard from "@/components/cards/ProductCard";
@@ -55,7 +52,7 @@ export default function Home() {
             <Column className="mt-[1.5rem] tablet:mt-0 tablet:pr-[4.25rem] laptop:px-[5.75rem] desktop:px-[7.25rem]">
               <Heading3>Joeward Peralta</Heading3>
               <SubHeading>Full Stack Developer</SubHeading>
-              <Paragraph className="text-gray mb-8">
+              <Paragraph className="mb-8 text-gray">
                 One year of experience in web development,
                 specializing in technologies like
                 <span className="text-secondary"> React</span>,
@@ -85,34 +82,6 @@ export default function Home() {
           </Container>
         </Section>
 
-        {/* Experience */}
-        <Section className="bg-secondary" id="experience">
-          <Container>
-            <Heading className="!text-primary">Experience</Heading>
-          </Container>
-
-          <Container>
-            <Column className="space-y-[3.5rem] tablet:space-y-[5rem] laptop:space-y-[8.375rem]">
-              {experiences.map((experience, index) => (
-                <ProductCard
-                  key={experience.id}
-                  image={{
-                    src: experience.image.src,
-                    alt: experience.image.alt,
-                  }}
-                  role={experience.role}
-                  company={experience.company}
-                  date={experience.date}
-                  description={experience.description}
-                  links={experience.links}
-                  theme="dark"
-                  mirror={index % 2 && true}
-                />
-              ))}
-            </Column>
-          </Container>
-        </Section>
-
         {/* Projects */}
         <Section id="projects">
           <Container>
@@ -122,20 +91,20 @@ export default function Home() {
           </Container>
           <Container>
             <Column className="space-y-[3.5rem] tablet:space-y-[5rem] laptop:space-y-[8.375rem]">
-              {projects.map((experience, index) => (
+              {projects.map((project, index) => (
                 <ProductCard
-                  key={experience.id}
+                  key={project.id}
                   image={{
-                    src: experience.image.src,
-                    alt: experience.image.alt,
+                    src: project.image.src,
+                    alt: project.image.alt,
                   }}
-                  role={experience.role}
-                  company={experience.company}
-                  date={experience.date}
-                  description={experience.description}
-                  links={experience.links}
+                  role={project.role}
+                  company={project.company}
+                  date={project.date}
+                  description={project.description}
+                  links={project.links}
                   mirror={index % 2 && true}
-                  status="development"
+                  isCompleted={project.isCompleted}
                 />
               ))}
             </Column>
