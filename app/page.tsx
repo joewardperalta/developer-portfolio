@@ -1,3 +1,7 @@
+// Data
+import profileSummary from "@/data/profileSummary.json";
+
+// Components
 import Paragraph from "@/components/ui/typography/Paragraph";
 import Title from "@/components/ui/typography/Title";
 import Wrapper from "@/components/ui/layout/Wrapper";
@@ -6,6 +10,7 @@ import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 import Image from "next/image";
 import Link from "next/link";
 import { Folder, Download } from "lucide-react";
+import SummaryCard from "@/components/ui/cards/SummaryCard";
 
 export default function Home() {
   return (
@@ -52,7 +57,20 @@ export default function Home() {
         </Wrapper>
       </section>
 
-      <section id=""></section>
+      <section id="">
+        <Wrapper>
+          <ul className="flex gap-2">
+            {profileSummary.map((summary, index) => (
+              <li className="w-full" key={index}>
+                <SummaryCard
+                  title={summary.title}
+                  description={summary.description}
+                />
+              </li>
+            ))}
+          </ul>
+        </Wrapper>
+      </section>
     </main>
   );
 }

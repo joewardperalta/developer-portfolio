@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "../branding/Logo";
 import Wrapper from "./Wrapper";
-import ButtonLink from "../buttons/ButtonLink";
+import ButtonLink from "../buttons/LinkButton";
 
 const navItems = [
   {
