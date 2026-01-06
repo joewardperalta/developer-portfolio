@@ -4,10 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primary: #144bff;
   --color-heading: #0a2540;
-  --color-background: #f9fafb;
-  --color-border: #e6ebf1;
   --color-body: #425466;
 }
 
@@ -64,7 +61,7 @@ body {
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(52.329% 0.23498 264.231);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
