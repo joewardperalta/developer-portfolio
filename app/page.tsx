@@ -1,8 +1,8 @@
-import Paragraph from "@/components/typography/Paragraph";
-import Title from "@/components/typography/Title";
-import Wrapper from "@/components/layout/Wrapper";
-import PrimaryButton from "@/components/buttons/PrimaryButton";
-import SecondaryButton from "@/components/buttons/SecondaryButton";
+import Paragraph from "@/components/ui/typography/Paragraph";
+import Title from "@/components/ui/typography/Title";
+import Wrapper from "@/components/ui/layout/Wrapper";
+import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
+import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 import Image from "next/image";
 import Link from "next/link";
 import { Folder, Download } from "lucide-react";
@@ -10,7 +10,7 @@ import { Folder, Download } from "lucide-react";
 export default function Home() {
   return (
     <main>
-      <section className="py-12">
+      <section id="home" className="py-12">
         <Wrapper>
           <div className="flex gap-9 items-center">
             <div>
@@ -51,6 +51,8 @@ export default function Home() {
           </div>
         </Wrapper>
       </section>
+
+      <section id=""></section>
     </main>
   );
 }
