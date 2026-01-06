@@ -9,10 +9,10 @@ export default function SummaryCard({ title, description }: Props) {
   return (
     <Card className="h-full shadow-none">
       <CardHeader>
-        <CardTitle>
+        <CardTitle className="text-heading">
           <h2>{title}</h2>
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="text-body">
           <p>{description}</p>
         </CardDescription>
       </CardHeader>
