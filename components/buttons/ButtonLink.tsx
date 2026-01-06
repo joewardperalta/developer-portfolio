@@ -4,9 +4,9 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export default function SecondaryButton({ children }: Props) {
+export default function ButtonLink({ children }: Props) {
   return (
-    <Button asChild variant="secondary">
+    <Button variant="link" asChild className="text-base text-heading">
       {children}
     </Button>
   );

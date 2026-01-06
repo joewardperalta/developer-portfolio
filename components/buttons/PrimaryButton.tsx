@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button } from "./Button";
 
 interface Props {
   children?: React.ReactNode;

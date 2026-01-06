@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "../branding/Logo";
 import Wrapper from "./Wrapper";
+import ButtonLink from "../buttons/ButtonLink";
 
 const navItems = [
   {
@@ -24,10 +25,12 @@ export default function Navbar() {
         <Logo />
 
         <nav>
-          <ul className="capitalize font-medium text-heading flex gap-8">
+          <ul className="capitalize font-medium text-heading flex">
             {navItems.map((item, index) => (
               <li key={index}>
-                <Link href={item.link}>{item.name}</Link>
+                <ButtonLink>
+                  <Link href={item.link}>{item.name}</Link>
+                </ButtonLink>
               </li>
             ))}
           </ul>
